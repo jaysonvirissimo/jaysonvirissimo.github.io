@@ -1,1 +1,1 @@
-This is my personal web page. It should be done in about three months.
+This is my personal web page. It should be done by the end of December 2014.
