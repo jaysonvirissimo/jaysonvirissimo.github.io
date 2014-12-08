@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
   <meta name="description" content="Jayson Virissimo : Home Page" />
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.min.css">
-  <script type="text/javascript" src="javascript/jquery-2.1.1.min.js" ></script>
+  <script type="text/javascript" src="javascripts/jquery-2.1.1.min.js" ></script>
 
   <title>Jayson Virissimo</title>
 </head>
@@ -34,22 +34,69 @@
 
 <section id="main-content" class="well">
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#prediction-note" data-toggle="tab" aria-expanded="true">PredictionNote</a></li>
-    <li class=""><a href="#shmactive-record" data-toggle="tab" aria-expanded="false">ShmactiveRecord</a></li>
-    <li class=""><a href="#ruby-on-tracks" data-toggle="tab" aria-expanded="false">Ruby on Tracks</a></li>
+    <li class="active"><a id="prediction-note" href="#prediction-note" data-toggle="tab" aria-expanded="true">PredictionNote</a></li>
+    <li class=""><a id="shmactive-record" href="#shmactive-record" data-toggle="tab" aria-expanded="false">ShmactiveRecord</a></li>
+    <li class=""><a id="ruby-on-tracks" href="#ruby-on-tracks" data-toggle="tab" aria-expanded="false">Ruby on Tracks</a></li>
   </ul>
 
   <div id="myTabContent" class="tab-content">
-    <div class="tab-pane fade active in" id="prediction-note">
+    <div id="prediction-note-pane" class="tab-pane fade active in">
       <p>A PredictionBook clone.</p>
     </div>
-    <div class="tab-pane fade" id="shmactive-record">
+    <div id="shmactive-record-pane" class="tab-pane fade" >
       <p>An experimental ActiveRecord-like object-relational mapping implementation.</p>
     </div>
-    <div class="tab-pane fade" id="ruby-on-tracks">
+    <div id="ruby-on-tracks-pane" class="tab-pane fade">
       <p>An experimental Rails-like web framework.</p>
     </div>
   </div>
 </section>
+
+<script>
+$('#prediction-note').on("click", function () {
+  // switch expanded
+  $('#shmactive-record').attr('aria-expanded', 'false');
+  $('#ruby-on-tracks').attr('aria-expanded', 'false');
+  $('#prediction-note').attr('aria-expanded', 'true');
+  // switch active
+  $('#ruby-on-tracks').parent().removeClass('active');
+  $('#shmactive-record').parent().removeClass('active');
+  $('#prediction-note').parent().addClass('active');
+  // switch active in
+  $('#ruby-on-tracks-pane').removeClass('active in');
+  $('#shmactive-record-pane').removeClass('active in');
+  $('#prediction-note-pane').addClass('active in');
+});
+
+$('#shmactive-record').on("click", function () {
+  // switch expanded
+  $('#prediction-note').attr('aria-expanded', 'false');
+  $('#ruby-on-tracks').attr('aria-expanded', 'false');
+  $('#shmactive-record').attr('aria-expanded', 'true');
+  // switch active
+  $('#ruby-on-tracks').parent().removeClass('active');
+  $('#prediction-note').parent().removeClass('active');
+  $('#shmactive-record').parent().addClass('active');
+  // switch active in
+  $('#ruby-on-tracks-pane').removeClass('active in');
+  $('#prediction-note-pane').removeClass('active in');
+  $('#shmactive-record-pane').addClass('active in');
+});
+
+$('#ruby-on-tracks').on("click", function () {
+  // switch expanded
+  $('#prediction-note').attr('aria-expanded', 'false');
+  $('#shmactive-record').attr('aria-expanded', 'false');
+  $('#ruby-on-tracks').attr('aria-expanded', 'true');
+  // switch active
+  $('#shmactive-record').parent().removeClass('active');
+  $('#prediction-note').parent().removeClass('active');
+  $('#ruby-on-tracks').parent().addClass('active');
+  // switch active in
+  $('#shmactive-record-pane').removeClass('active in');
+  $('#prediction-note-pane').removeClass('active in');
+  $('#ruby-on-tracks-pane').addClass('active in');
+});
+</script>
 </body>
 </html>
