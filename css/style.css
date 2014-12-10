@@ -502,3 +502,8 @@
 				{
 					display: none;
 				}
+
+.technology li {
+	display: inline;
+	padding: 5px;
+}
