@@ -6,19 +6,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
-
     <title>Jayson Virissimo</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -32,7 +25,6 @@
     <div class="container">
     	<div class="col-lg-6 col-lg-offset-3">
 
-    		<!-- ===== vCard Navigation ===== -->
     		<div class="row w">
     			<div class="col-md-4">
     				<img class="img-responsive" src="assets/img/avatar.png" alt="">
@@ -44,7 +36,6 @@
 					</ul>
 				</div><!-- col-md-4 -->
 
-    		<!-- ===== vCard Content ===== -->
     			<div class="col-md-8">
 	    			<div class="tab-content">
 
@@ -87,25 +78,25 @@
 	    			  <!-- ===== Third Tab ===== -->
 					  <div class="tab-pane" id="portfolio">
 						  <div class="row">
-							  <div class="col-xs-6 centered">
+                <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='top' title="PredictionNote">
 							  	<img class="img-responsive" src="assets/img/prediction-note.png" alt="">
-                  <a href="http://www.prediction-note.com/"><h6><i class="icon-link">PredictionNote</i></h6></a>
+                  <a href="http://www.prediction-note.com/"><i class="icon-link"></i> Live</a> | <a href="https://github.com/jaysonvirissimo/prediction-note"> <i class="icon-link"></i>Source</a>
 							  </div><!-- col-xs-6 -->
-							  <div class="col-xs-6 centered">
+							  <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='top' title="ShmactiveRecord">
 							  	<img class="img-responsive" src="assets/img/shmactive-record.png" alt="">
-							  	<a href="https://github.com/jaysonvirissimo/shmactive-record"><h6><i class="icon-link"></i> ShmactiveRecord</h6></a>
+                  <a href="https://github.com/jaysonvirissimo/shmactive-record"> <i class="icon-link"></i>Source</a>
 							  </div><!-- col-xs-6 -->
 						  </div><!-- row -->
 
 						  <div class="row">
 						  	<br>
-							  <div class="col-xs-6 centered">
-							  	<img class="img-responsive" src="assets/img/lm-forum.png" alt="">
-							  	<a href="http://virissimo.info/lm-forum/"><h6><i class="icon-link"></i> LM-Forum</h6></a>
+							  <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='bottom' title="Zendorator">
+                  <img class="img-responsive" src="assets/img/zendorator.png" alt="">
+                  <a href="http://virissimo.info/zendorator/"><i class="icon-link"></i> Live</a> | <a href="https://github.com/jaysonvirissimo/zendorator/tree/gh-pages"><i class="icon-link"></i>Source</a>
 							  </div>
-							  <div class="col-xs-6 centered">
-							  	<!-- <img class="img-responsive" src="assets/img/p04.png" alt="">
-							  	<a href="#"><h6><i class="icon-link"></i> Project Name</h6></a> -->
+							  <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='bottom' title="LM-Forum">
+                  <img class="img-responsive" src="assets/img/lm-forum.png" alt="">
+                  <a href="http://virissimo.info/lm-forum/"><i class="icon-link"></i> Live</a> | <a href="https://github.com/jaysonvirissimo/lm-forum"><i class="icon-link"></i>Source</a>
 							  </div>
 						  </div>
 					  </div>
@@ -127,10 +118,6 @@
     	</div><!-- col-lg-6 -->
     </div><!-- /.container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script>
@@ -138,6 +125,9 @@
 	  e.preventDefault()
 	  $(this).tab('show')
 	})
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
 	</script>
 
   </body>
