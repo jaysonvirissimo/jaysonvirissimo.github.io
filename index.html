@@ -54,7 +54,7 @@
               <div class="btn-group btn-group-justified">
                 <a href="documents/resume.html" class="btn btn-default">HTML</a>
                 <!-- <a href="#" class="btn btn-default">Markdown</a> -->
-                <a href="#" class="btn btn-default">PDF</a>
+                <a href="documents/resume.pdf" class="btn btn-default">PDF</a>
               </div>
 					  </div><!-- tab about -->
 
@@ -83,11 +83,11 @@
 	    			  <!-- ===== Third Tab ===== -->
 					  <div class="tab-pane" id="portfolio">
 						  <div class="row">
-                <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='top' title="PredictionNote">
-							  	<img class="img-responsive" src="assets/img/prediction-note.png" alt="">
-                  <a href="http://www.prediction-note.com/"><i class="icon-link"></i> Live</a> | <a href="https://github.com/jaysonvirissimo/prediction-note"> <i class="icon-link"></i>Source</a>
+                <div class="col-xs-6 centered">
+                  <a href="http://www.prediction-note.com/"><img class="img-responsive" src="assets/img/prediction-note.png" alt=""></a>
+                  <a href="https://github.com/jaysonvirissimo/prediction-note"> <i class="icon-link"></i>Source</a>
 							  </div><!-- col-xs-6 -->
-							  <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='top' title="ShmactiveRecord">
+							  <div class="col-xs-6 centered">
 							  	<img class="img-responsive" src="assets/img/shmactive-record.png" alt="">
                   <a href="https://github.com/jaysonvirissimo/shmactive-record"> <i class="icon-link"></i>Source</a>
 							  </div><!-- col-xs-6 -->
@@ -95,11 +95,11 @@
 
 						  <div class="row">
 						  	<br>
-							  <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='top' title="Zendorator">
+							  <div class="col-xs-6 centered">
                   <img class="img-responsive" src="assets/img/zendorator.png" alt="">
                   <a href="http://virissimo.info/zendorator/"><i class="icon-link"></i> Live</a> | <a href="https://github.com/jaysonvirissimo/zendorator/tree/gh-pages"><i class="icon-link"></i>Source</a>
 							  </div>
-							  <div class="col-xs-6 centered" data-toggle='tooltip' data-placement='top' title="LM-Forum">
+							  <div class="col-xs-6 centered">
                   <img class="img-responsive" src="assets/img/lm-forum.png" alt="">
                   <a href="http://virissimo.info/lm-forum/"><i class="icon-link"></i> Live</a> | <a href="https://github.com/jaysonvirissimo/lm-forum"><i class="icon-link"></i>Source</a>
 							  </div>
@@ -129,10 +129,7 @@
 	$('#myTab a').click(function (e) {
 	  e.preventDefault()
 	  $(this).tab('show')
-	})
-  $(document).ready(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
+	});
 	</script>
 
   </body>
