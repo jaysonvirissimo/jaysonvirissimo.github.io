@@ -6,6 +6,7 @@
     "email": "jayson.virissimo@asu.edu",
     "phone": "(602) 561-8485",
     "website": "http://virissimo.info/",
+    "summary": "I'm originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable, idiomatic, and performant code. I hope to leave the world better off than I found it.",
     "location": {
       "address": "8584 East Indian School Road, Unit A",
       "postalCode": "AZ 85251",
@@ -124,19 +125,19 @@
   ],
   "interests": [
     {
-      "name": "Epistemology"
+      "name": "Philosophy",
+      "keywords": [
+        "Epistemology",
+        "Logic",
+        "Philosophy of Science"
+      ]
     },
     {
-      "name": "Existential risk"
-    },
-    {
-      "name": "Logic"
-    },
-    {
-      "name": "Microeconomics"
-    },
-    {
-      "name": "Psychology"
+      "name": "Social Science",
+      "keywords": [
+        "Microeconomics",
+        "Cognitive Psychology"
+      ]
     }
   ]
 }
