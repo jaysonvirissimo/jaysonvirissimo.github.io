@@ -1,0 +1,142 @@
+{
+  "basics": {
+    "name": "Jayson Virissimo",
+    "label": "Software Engineer",
+    "picture": "http://virissimo.info/assets/img/avatar.png",
+    "email": "jayson.virissimo@asu.edu",
+    "phone": "(602) 561-8485",
+    "website": "http://virissimo.info/",
+    "location": {
+      "address": "8584 East Indian School Road, Unit A",
+      "postalCode": "AZ 85251",
+      "city": "Scottsdale",
+      "countryCode": "US",
+      "region": "Arizona"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "jaysonvirissimo",
+        "url": "https://github.com/jaysonvirissimo"
+      },
+      {
+        "network": "Twitter",
+        "username": "JaysonVirissimo",
+        "url": "https://twitter.com/JaysonVirissimo"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jaysonvirissimo",
+        "url": "https://www.linkedin.com/in/jaysonvirissimo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "JetPack Enterprises",
+      "position": "Web Developer (Contractor)",
+      "website": "http://jetpackstudio.com/",
+      "startDate": "2015-02-01",
+      "summary": "JetPack Enterprises is a Phoenix-based company that offers web, mobile, and desktop development and consulting services.",
+      "highlights": [
+        "Full-stack development of Ruby on Rails applications from user story to production",
+        "Repaired, refactored, and added features to legacy software projects"
+      ]
+    },
+    {
+      "company": "Bloom & Speak Bilingual Tx",
+      "position": "Co-founder",
+      "website": "http://www.bloomandspeak.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2015-01-31",
+      "summary": "Bloom & Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.",
+      "highlights": [
+        "Conducted market research, created business plan, developed short and long term strategies",
+        "Obtained funding, negotiated contracts with state agencies and insurance companies",
+        "Taught myself computer programming for business automation tasks"
+      ]
+    },
+    {
+      "company": "Mesa Police Department",
+      "position": "Public Safety 911 Operator",
+      "website": "http://www.mesaaz.gov/residents/police",
+      "startDate": "2011-02-01",
+      "endDate": "2013-03-31",
+      "highlights": [
+        "Answered emergency phone calls, made timely appropriate responses based on department policy and personal judgment",
+        "Relayed information to first-responders, coordinated dispatch, gave instructions to callers in life-threatening situations"
+      ]
+    },
+    {
+      "company": "Transportation Security Administration",
+      "position": "Transportation Security Officer",
+      "website": "http://www.tsa.gov/",
+      "startDate": "2007-12-01",
+      "endDate": "2011-01-31",
+      "highlights": [
+        "Conducted covert auditing of airport security checkpoints as part of the 'Red Team'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Arizona State University",
+      "area": "Political Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2005-08-20",
+      "endDate": "2009-05-11",
+      "courses": [
+        "CSE 110 - Introduction to Programming in Java",
+        "CSE 120 - Fundamentals of Digital Design",
+        "CSE 200 - Object Oriented Programming and Data Structures",
+        "MAT 265 - Calculus for Engineers",
+        "PHI 313 - Probability, Evidence, and Decision"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Ruby",
+        "Javascript",
+        "HTML",
+        "CSS",
+        "RSpec",
+        "Jasmine",
+        "R",
+        "SQL",
+        "Markdown",
+        "Rails",
+        "Backbone.js",
+        "Bootstrap",
+        "Git",
+        "Chrome Dev Tools",
+        "jQuery"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Epistemology"
+    },
+    {
+      "name": "Existential risk"
+    },
+    {
+      "name": "Logic"
+    },
+    {
+      "name": "Microeconomics"
+    },
+    {
+      "name": "Psychology"
+    }
+  ]
+}
