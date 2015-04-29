@@ -105,7 +105,6 @@
         "CSS",
         "RSpec",
         "Jasmine",
-        "R",
         "SQL",
         "Markdown",
         "Rails",
@@ -125,18 +124,15 @@
   ],
   "interests": [
     {
-      "name": "Philosophy",
+      "name": "World Travel",
       "keywords": [
-        "Epistemology",
-        "Logic",
-        "Philosophy of Science"
-      ]
-    },
-    {
-      "name": "Social Science",
-      "keywords": [
-        "Microeconomics",
-        "Cognitive Psychology"
+        "Canada",
+        "France",
+        "Italy",
+        "Japan",
+        "Mexico",
+        "Portugal",
+        "United Kingdom"
       ]
     }
   ]

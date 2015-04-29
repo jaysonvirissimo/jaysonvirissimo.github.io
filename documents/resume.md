@@ -27,7 +27,7 @@ I&#x27;m originally from SoCal, but am currently living in Scottsdale, Arizona. 
 ## Work
 
 ### Web Developer (Contractor), [JetPack Enterprises](http://jetpackstudio.com/)
-##### 2015-02-01
+##### 2015-02-01 
 
 * Full-stack development of Ruby on Rails applications from user story to production
 * Repaired, refactored, and added features to legacy software projects
@@ -76,7 +76,7 @@ Bloom &amp; Speak is a speech therapy company serving children throughout the Ph
 
 ## Skills
 
-* Software Development (Ruby, Javascript, HTML, CSS, RSpec, Jasmine, R, SQL, Markdown, Rails, Backbone.js, Bootstrap, Git, Chrome Dev Tools, jQuery)
+* Software Development (Ruby, Javascript, HTML, CSS, RSpec, Jasmine, SQL, Markdown, Rails, Backbone.js, Bootstrap, Git, Chrome Dev Tools, jQuery)
 
 ## Languages
 
@@ -84,5 +84,5 @@ Bloom &amp; Speak is a speech therapy company serving children throughout the Ph
 
 ## Interests
 
-* Philosophy (Epistemology, Logic, Philosophy of Science)
-* Social Science (Microeconomics, Cognitive Psychology)
+* World Travel (Canada, France, Italy, Japan, Mexico, Portugal, United Kingdom)
+
