@@ -5,20 +5,22 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    </head>
    <body>
-     <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Jayson Virissimo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class='active'><a href="professional.html">Professional</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+     <header>
+       <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Jayson Virissimo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class='active'><a href="professional.html">Professional</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     
     <main class='container'>
-      <section id='resume' class='container'>
+      <section id='professional'>
         <div class="row">
-          <div class="col s12 m12">
+          <div id='resume' class="col s12 m6">
             <div class="card blue-grey darken-1">
               <div class="card-content white-text">
                 <span class="card-title">Jayson Virissimo -- Software Engineer</span>
@@ -39,26 +41,36 @@
             </div>
           </div>
         </div>
-      </section>
-      
-      <section id='portfolio' class='container'>
-        <h3>Portfolio</h3>
-        <ul class="collapsible" data-collapsible="expandable">
-          <li>
-            <div class="collapsible-header"><i class="material-icons"></i>Prediction-Note</div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="material-icons"></i>ShmactiveRecord</div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="material-icons"></i>Zendorator</div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-          </li>
-        </ul>
+        <div class='row'>
+          <div id='portfolio' class="col s12 m12">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Portfolio</span>
+                <!-- <p>Here's a sample of some projects I've made.</p> -->
+              </div>
+              <div class="card-action">
+                <ul class="collapsible" data-collapsible="expandable">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>Prediction-Note</div>
+                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>ShmactiveRecord</div>
+                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>Zendorator</div>
+                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
       </section>
     </main>
+    
+    <footer>
+    </footer>
      
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
