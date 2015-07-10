@@ -99,20 +99,22 @@
     {
       "name": "Software Development",
       "keywords": [
+        "CoffeeScript",
+        "JavaScript",
         "Ruby",
-        "Javascript",
-        "HTML",
-        "CSS",
-        "RSpec",
-        "Jasmine",
-        "SQL",
-        "Markdown",
-        "Rails",
         "Backbone.js",
         "Bootstrap",
-        "Git",
         "Chrome Dev Tools",
-        "jQuery"
+        "CSS",
+        "Git",
+        "HTML",
+        "jQuery",
+        "Jasmine",
+        "Markdown",
+        "Minitest",
+        "Rails",
+        "RSpec",
+        "SQL"
       ]
     }
   ],
@@ -120,21 +122,6 @@
     {
       "language": "English",
       "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "World Travel",
-      "keywords": [
-        "Canada",
-        "Egypt",
-        "France",
-        "Italy",
-        "Japan",
-        "Mexico",
-        "Portugal",
-        "United Kingdom"
-      ]
     }
   ]
 }
