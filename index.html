@@ -3,6 +3,7 @@
  <head>
    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  </head>
  <body>
    <header>
@@ -11,31 +12,29 @@
         <a href="#" class="brand-logo">Jayson Virissimo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class='active'><a href="professional.html">Professional</a></li>
-          <!-- <li><a href="contact.html">Contact</a></li> -->
         </ul>
       </div>
     </nav>
   </header>
   
-  <main class='container'>
-    <section id='professional'>
-      <div class="row">
-        <div id='resume' class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <div class='row'>
-                <div class='col s3'>
-                  <img src="images/me.png" alt="" class="responsive-img">
-                </div>
-                <div class='col s9'>
-                  <span class="card-title">Resume</span>
-                  <p>
-                    I'm originally from SoCal, but am currently living in Scottsdale, Arizona. 
-                    I like thinking big thoughts. 
-                    I strive to write idiomatic and performant code. 
-                    I hope to leave the world better off than I found it.
-                    Click below to download my resume in the format of your choice.
-                  </p>
+  <main id='professional' class='container'>
+    <div class="row">
+      <div id='resume' class="col s12 m6">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <div class='row'>
+              <div class='col s3 m3'>
+                <img src="images/me.png" alt="" class="responsive-img">
+              </div>
+              <div class='col s9'>
+                <span class="card-title">Resume</span>
+                <p>
+                  I'm originally from SoCal, but am currently living in Scottsdale, Arizona. 
+                  I like thinking big thoughts. 
+                  I strive to write idiomatic and performant code. 
+                  I hope to leave the world better off than I found it.
+                  <em>Click below to download my resume in the format of your choice.</em>
+                </p>
               </div>
             </div>
             <div class="card-action">
@@ -45,37 +44,60 @@
               <a href="documents/resume.pdf" target="_blank">PDF</a>
             </div>
           </div>
-        </div>
-      
-            
+        </div>    
       </div>
       
-      <div class='row'>
-        <div id='portfolio' class="col s12 m12">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Portfolio</span>
-              <!-- <p>Here's a sample of some projects I've made.</p> -->
-            </div>
-            <div class="card-action">
-              <ul class="collapsible" data-collapsible="expandable">
-                <li>
-                  <div class="collapsible-header"><i class="material-icons"></i>Prediction-Note</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons"></i>ShmactiveRecord</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons"></i>Zendorator</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-              </ul>
-            </div>
+      <div id='contact-info' class='col s6 m3'>
+        <ul class="collection with-header">
+          <li class="collection-header"><h4>Contact Info</h4></li>
+          <li class="collection-item"><div>Telephone<a href="tel:+16025618485" class="secondary-content"><i class="material-icons">phone</i></a></div></li>
+          <li class="collection-item"><div>E-mail<a href="mailto:jayson.virissimo@asu.edu" class="secondary-content"><i class="material-icons">mail</i></a></div></li>
+          <li class="collection-item"><div>Github<a href="#!" class="secondary-content"><i class="material-icons">code</i></a></div></li>
+          <li class="collection-item"><div>LinkedIn<a href="#!" class="secondary-content"><i class="material-icons">web</i></a></div></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class='row'>
+      <div id='portfolio' class="col s12 m12">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Portfolio</span>
+            <p><em>Click the project names below to learn more about my recent projects.</em></p>
           </div>
+          <div class="card-action">
+            <ul class="collapsible white" data-collapsible="expandable">
+              <li>
+                <div class="collapsible-header"><i class="material-icons"></i><strong>PredictionNote</strong></div>
+                <div class="collapsible-body">
+                  <p>
+                    <strong>PredictionNote</strong> is a public prediction sharing application originally inspired by PredictionBook.
+                      It was built using the Ruby on Rails open source web application framework written in Ruby.
+                      I used a custom authentication system utilizing the bcrypt key derivation function to protect user credentials.
+                      Web page styling was done using custom CSS and the Bootstrap framework.
+                      Javascript's jQuery library was used for sending and receiving data from the server asynchronously and the tutorial makes use of the sherpherd.js.
+                  </p>
+                  <div class='row'>
+                    <div class='col offset-s1'>
+                      <a class="waves-effect waves-light btn blue-grey darken-1 offset-s3" href="https://github.com/jaysonvirissimo/prediction-note"><i class="material-icons left">code</i>Source Code</a>
+                      <a class="waves-effect waves-light btn blue-grey darken-1" href="http://www.prediction-note.com/"><i class="material-icons left">pageview</i>Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons"></i><strong>ShmactiveRecord</strong></div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons"></i><strong>Zendorator</strong></div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
   
   <footer>
