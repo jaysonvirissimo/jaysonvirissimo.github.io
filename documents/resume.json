@@ -6,7 +6,7 @@
     "email": "jayson.virissimo@asu.edu",
     "phone": "(602) 561-8485",
     "website": "http://virissimo.info/",
-    "summary": "I'm originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable, idiomatic, and performant code. I hope to leave the world better off than I found it.",
+    "summary": "I'm originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable and performant code. I hope to leave the world better off than I found it.",
     "location": {
       "address": "8584 East Indian School Road, Unit A",
       "postalCode": "AZ 85251",
@@ -21,15 +21,16 @@
         "url": "https://github.com/jaysonvirissimo"
       },
       {
-        "network": "Twitter",
-        "username": "JaysonVirissimo",
-        "url": "https://twitter.com/JaysonVirissimo"
-      },
-      {
         "network": "LinkedIn",
         "username": "jaysonvirissimo",
         "url": "https://www.linkedin.com/in/jaysonvirissimo"
+      },
+      {
+        "network": "Twitter",
+        "username": "JaysonVirissimo",
+        "url": "https://twitter.com/JaysonVirissimo"
       }
+      
     ]
   },
   "work": [
@@ -40,7 +41,8 @@
       "startDate": "2015-02-01",
       "summary": "JetPack Enterprises is a Phoenix-based company that offers web, mobile, and desktop development and consulting services.",
       "highlights": [
-        "Full-stack development of Ruby on Rails applications from user story to production",
+        "Utilized the CoffeeScript, JavaScript, and Ruby programming languages in conjunction with the Ruby on Rails web framework",
+        "Performed full-stack development of web applications",
         "Repaired, refactored, and added features to legacy software projects"
       ]
     },
