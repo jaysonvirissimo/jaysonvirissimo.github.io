@@ -2,7 +2,7 @@
   "basics": {
     "name": "Jayson Virissimo",
     "label": "Software Engineer",
-    "picture": "http://virissimo.info/assets/img/avatar.png",
+    "picture": "http://virissimo.info/images/avatar.png",
     "email": "jayson.virissimo@asu.edu",
     "phone": "(602) 561-8485",
     "website": "http://virissimo.info/",
@@ -36,7 +36,7 @@
   "work": [
     {
       "company": "JetPack Enterprises",
-      "position": "Web Developer (Contractor)",
+      "position": "Web Developer",
       "website": "http://jetpackstudio.com/",
       "startDate": "2015-02-01",
       "summary": "JetPack Enterprises is a Phoenix-based company that offers web, mobile, and desktop development and consulting services.",
