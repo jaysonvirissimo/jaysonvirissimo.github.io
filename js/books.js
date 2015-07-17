@@ -1,3 +1,3 @@
-var restyleHeadings = function () {
-  $('#books h2').removeStyle('display');
+var removeUglyHeadings = function () {
+  $('#books h2').children('a').remove()
 }
