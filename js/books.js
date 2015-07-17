@@ -5,3 +5,11 @@ var removeUglyHeadings = function () {
 var removeUglyLinks = function () {
   $('a.gr_grid_branding').remove()
 }
+
+var removeProgressBar = function () {
+  $('.progress').remove()
+}
+
+var showWidgets = function () {
+  $('.widget').css('display', 'block')
+}

@@ -26,7 +26,12 @@
           <div class="col s12 m12">
             <div class="card-panel blue-grey darken-1">
               <h3 class='white-text'>Currently Reading</h3>
-              <div id="gr_grid_widget_1437106849"></div>
+              <div class="progress">
+                <div class="indeterminate"></div>
+              </div>
+              <div class='widget'>
+                <div id="gr_grid_widget_1437106849"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -36,7 +41,12 @@
           <div class="col s12 m12">
             <div class="card-panel blue-grey darken-1">
               <h3 class='white-text'>Recently Read</h3>
-              <div id="gr_grid_widget_1437105790"></div>
+              <div class="progress">
+                <div class="indeterminate"></div>
+              </div>
+              <div class='widget'>
+                <div id="gr_grid_widget_1437105790"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -77,9 +87,11 @@
    <script type="text/javascript" src="js/books.js"></script>
    <script>
      $(document).ready(function () {
+       Materialize.showStaggeredList('#book-list');
        removeUglyHeadings();
        removeUglyLinks();
-       Materialize.showStaggeredList('#book-list');
+       removeProgressBar();
+       showWidgets();
      });
    </script>
  
