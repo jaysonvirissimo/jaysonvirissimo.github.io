@@ -13,46 +13,16 @@
         <a href="index.html" class="brand-logo">Jayson Virissimo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="index.html">Professional</a></li>
-          <li class='active'><a href="books.html">Books</a></li>
-          <li><a href="goals.html">Goals</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li class='active'><a href="goals.html">Goals</a></li>
         </ul>
       </div>
     </nav>
   </header>
   
-  <main id='books' class='container'>
-    <ul id='book-list'>
-      <li>
-        <div id='currently-reading' class="row">
-          <div class="col s12 m12">
-            <div class="card-panel blue-grey darken-1">
-              <h3 class='white-text'>Currently Reading</h3>
-              <div class="progress">
-                <div class="indeterminate"></div>
-              </div>
-              <div class='widget'>
-                <div id="gr_grid_widget_1437106849"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div id='recently-read' class="row">
-          <div class="col s12 m12">
-            <div class="card-panel blue-grey darken-1">
-              <h3 class='white-text'>Recently Read</h3>
-              <div class="progress">
-                <div class="indeterminate"></div>
-              </div>
-              <div class='widget'>
-                <div id="gr_grid_widget_1437105790"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
+  <main id='goals' class='container'>
+    <div id='goal-widgets' class="row">
+    </div>
   </main>
 
   <footer class="page-footer blue-grey darken-1">
@@ -83,16 +53,11 @@
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script type="text/javascript" src="js/materialize.min.js"></script>
-   <script src="https://www.goodreads.com/review/grid_widget/6429894.Jayson's%20bookshelf:%20read?cover_size=medium&hide_link=&hide_title=&num_books=24&order=d&shelf=read&sort=date_read&widget_id=1437105790" type="text/javascript" charset="utf-8"></script>
-   <script src="https://www.goodreads.com/review/grid_widget/6429894.Jayson's%20currently-reading%20book%20montage?cover_size=medium&hide_link=&hide_title=&num_books=12&order=d&shelf=currently-reading&sort=date_read&widget_id=1437106849" type="text/javascript" charset="utf-8"></script>
-   <script type="text/javascript" src="js/books.js"></script>
+   <script type="text/javascript" src="js/goals.js"></script>
    <script>
      $(document).ready(function () {
-       Materialize.showStaggeredList('#book-list');
-       removeUglyHeadings();
-       removeUglyLinks();
-       removeProgressBar();
-       showWidgets();
+       addAllGoalWidgetCards();
+       console.log(goalHash);
      });
    </script>
  
