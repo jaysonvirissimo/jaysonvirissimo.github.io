@@ -24,7 +24,7 @@ var constructGoalWidgetTitle = function (title) {
 
 var constructGoalWidgetCard = function (title, slug) {
   var string = "<div id='" + slug + "'" +
-    " class='col m3'>" +
+    " class='col s12 m6 l3'>" +
     "<div class='card'>" + 
     "<div class='card-content'>" +
     constructGoalWidgetTitle(title) +
