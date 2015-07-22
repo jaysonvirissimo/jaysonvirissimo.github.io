@@ -1,21 +1,27 @@
 <!DOCTYPE html>
- <html>
- <head>
-   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-   <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- </head>
- <body>
-   <header>
-     <nav>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
       <div class="nav-wrapper blue-grey darken-1">
         <a href="index.html" class="brand-logo">Jayson Virissimo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="index.html">Professional</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li class='active'><a href="goals.html">Goals</a></li>
+          <li class='active'><a href="books.html">Books</a></li>
+          <li><a href="goals.html">Goals</a></li>
         </ul>
+        <ul id="slide-out" class="side-nav">
+          <li><a href="index.html">Professional</a></li>
+          <li class='active'><a href="books.html">Books</a></li>
+          <li><a href="goals.html">Goals</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
     </nav>
   </header>
@@ -24,7 +30,7 @@
     <div id='goal-widgets' class="row">
     </div>
   </main>
-
+  
   <footer class="page-footer blue-grey darken-1">
     <div class="container blue-grey darken-1">
       <div class="row">
@@ -50,15 +56,16 @@
       <div class="container"> &copy; 2015 Jayson Virissimo, All rights reserved.</div>
     </div>
   </footer>
-
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   <script type="text/javascript" src="js/materialize.min.js"></script>
-   <script type="text/javascript" src="js/goals.js"></script>
-   <script>
-     $(document).ready(function () {
-       addAllGoalWidgetCards();
-     });
-   </script>
- 
- </body>
- </html>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/goals.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      addAllGoalWidgetCards();
+      setupSideNavigation();
+    });
+  </script>
+</body>
+</html>
