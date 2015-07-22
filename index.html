@@ -1,13 +1,13 @@
 <!DOCTYPE html>
- <html>
- <head>
-   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- </head>
- <body>
-   <header>
-     <nav>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
       <div class="nav-wrapper blue-grey darken-1">
         <a href="index.html" class="brand-logo">Jayson Virissimo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -19,130 +19,138 @@
     </nav>
   </header>
   
-  <main id='professional' class='container'>
-    <div class="row">
-      <div id='resume' class="col s12 m6">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <div class='row'>
-              <div class='col s3 m3'>
-                <img src="images/me.png" alt="" class="responsive-img hide-on-med-and-down">
-              </div>
-              <div class='col s9'>
-                <span class="card-title">Resume</span>
-                <p>
-                  I'm originally from SoCal, but am currently living in Scottsdale, Arizona. 
-                  I like thinking big thoughts. 
-                  I strive to write idiomatic and performant code. 
-                  I hope to leave the world better off than I found it.
-                  <em>Click below to download my resume in the format of your choice.</em>
-                </p>
-              </div>
+  <main class='row'>
+    <section id='professional' class='col s12 m9 l9'>
+      <div class="row">
+        <div id='portfolio' class="col s12 m12 l12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Portfolio</span>
+              <p><em>Click the project names below to learn more about my recent projects.</em></p>
             </div>
             <div class="card-action">
-              <a href="documents/resume.html" target="_blank">HTML</a>
-              <a href="documents/resume.json" target="_blank">JSON</a>
-              <a href="documents/resume.md" target="_blank">Markdown</a>
-              <a href="documents/resume.pdf" target="_blank">PDF</a>
-            </div>
-          </div>
-        </div>    
-      </div>
-      
-      
-    </div>
-    
-    <div class='row'>
-      <div id='portfolio' class="col s12 m12">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">Portfolio</span>
-            <p><em>Click the project names below to learn more about my recent projects.</em></p>
-          </div>
-          <div class="card-action">
-            <ul class="collapsible white" data-collapsible="expandable">
-              <li>
-                <div class="collapsible-header"><i class="material-icons"></i><strong>PredictionNote</strong></div>
-                <div class="collapsible-body">
-                  <p>
-                    <strong>PredictionNote</strong> is a public prediction sharing application originally inspired by PredictionBook.
+              <ul class="collapsible white" data-collapsible="expandable">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons"></i><strong>PredictionNote</strong></div>
+                  <div class="collapsible-body">
+                    <p>
+                      <strong>PredictionNote</strong> is a public prediction sharing application originally inspired by PredictionBook.
                       It was built using the Ruby on Rails open source web application framework written in Ruby.
                       I used a custom authentication system utilizing the bcrypt key derivation function to protect user credentials.
                       Web page styling was done using custom CSS and the Bootstrap framework.
                       Javascript's jQuery library was used for sending and receiving data from the server asynchronously and the tutorial makes use of the sherpherd.js.
-                  </p>
-                  <div class='row'>
-                    <div class='col offset-s1'>
-                      <a class="waves-effect waves-light btn blue-grey darken-1 offset-s3" href="https://github.com/jaysonvirissimo/prediction-note"><i class="material-icons left">code</i>Source Code</a>
-                      <a class="waves-effect waves-light btn blue-grey darken-1" href="http://www.prediction-note.com/"><i class="material-icons left">pageview</i>Live Demo</a>
+                    </p>
+                    <div class='row'>
+                      <div class='col offset-s1'>
+                        <a class="waves-effect waves-light btn blue-grey darken-1 offset-s3" href="https://github.com/jaysonvirissimo/prediction-note"><i class="material-icons left">code</i>Source Code</a>
+                        <a class="waves-effect waves-light btn blue-grey darken-1" href="http://www.prediction-note.com/"><i class="material-icons left">pageview</i>Live Demo</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="material-icons"></i><strong>ShmactiveRecord</strong></div>
-                <div class="collapsible-body">
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons"></i><strong>ShmactiveRecord</strong></div>
+                  <div class="collapsible-body">
+                    <p>
+                      <strong>ShmactiveRecord</strong> is an experimental object-relational mapping implementing the active record design pattern. 
+                      It was created in November 2014 while I was attending App Academy.
+                      I wrote the program using test-driven development, and split the project into 4 phases (each with their own set of tests).
+                      It has all of the most common methods used in Ruby on Rails-flavored version of ActiveRecord, including <em>all</em>, <em>save</em>, <em>update</em>, <em>find</em>, <em>find_by_id</em>, and the <em>has_many</em>, <em>has_one</em>, <em>belongs_to</em>, and <em>has_many_through</em> associations.
+                    </p>
+                    <div class='row'>
+                      <div class='col offset-s1'>
+                        <a class="waves-effect waves-light btn blue-grey darken-1 offset-s3" href="https://github.com/jaysonvirissimo/shmactive-record"><i class="material-icons left">code</i>Source Code</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons"></i><strong>Zendorator</strong></div>
+                  <div class="collapsible-body">
+                    <p>
+                      <strong>Zendorator</strong> is a web application that generates rules for Zendo, the game of inductive inference.
+                    </p>
+                    <div class='row'>
+                      <div class='col offset-s1'>
+                        <a class="waves-effect waves-light btn blue-grey darken-1 offset-s3" href="https://github.com/jaysonvirissimo/zendorator/tree/gh-pages"><i class="material-icons left">code</i>Source Code</a>
+                        <a class="waves-effect waves-light btn blue-grey darken-1" href="http://virissimo.info/zendorator/"><i class="material-icons left">pageview</i>Live Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div id='resume' class="col s12 m9 l9">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <div class='row'>
+                <div>
+                  <span class="card-title">Resume</span>
                   <p>
-                    <strong>ShmactiveRecord</strong> is an experimental object-relational mapping implementing the active record design pattern. 
-                    It was created in November 2014 while I was attending App Academy.
-                    I wrote the program using test-driven development, and split the project into 4 phases (each with their own set of tests).
-                    It has all of the most common methods used in Ruby on Rails-flavored version of ActiveRecord, including <em>all</em>, <em>save</em>, <em>update</em>, <em>find</em>, <em>find_by_id</em>, and the <em>has_many</em>, <em>has_one</em>, <em>belongs_to</em>, and <em>has_many_through</em> associations.
+                    <em>Click below to download my resume in the format of your choice.</em>
                   </p>
-                  <div class='row'>
-                    <div class='col offset-s1'>
-                      <a class="waves-effect waves-light btn blue-grey darken-1 offset-s3" href="https://github.com/jaysonvirissimo/shmactive-record"><i class="material-icons left">code</i>Source Code</a>
-                    </div>
-                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="material-icons"></i><strong>Zendorator</strong></div>
-                <div class="collapsible-body">
-                  <p>
-                    <strong>Zendorator</strong> is a web application that generates rules for Zendo, the game of inductive inference.
-                  </p>
-                  <div class='row'>
-                    <div class='col offset-s1'>
-                      <a class="waves-effect waves-light btn blue-grey darken-1 offset-s3" href="https://github.com/jaysonvirissimo/zendorator/tree/gh-pages"><i class="material-icons left">code</i>Source Code</a>
-                      <a class="waves-effect waves-light btn blue-grey darken-1" href="http://virissimo.info/zendorator/"><i class="material-icons left">pageview</i>Live Demo</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+              </div>
+              <div class="card-action">
+                <a href="documents/resume.html" target="_blank">HTML</a>
+                <a href="documents/resume.json" target="_blank">JSON</a>
+                <a href="documents/resume.md" target="_blank">Markdown</a>
+                <a href="documents/resume.pdf" target="_blank">PDF</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-
-  <footer class="page-footer blue-grey darken-1">
-    <div class="container blue-grey darken-1">
-      <div class="row">
-        <div class="col l3 s6">
-          <h5 class="white-text">Contact Info</h5>
-          <ul class="collection">
-            <li class="collection-item"><div>Telephone<a href="tel:+16025618485" class="secondary-content"><i class="material-icons">phone</i></a></div></li>
-            <li class="collection-item"><div>Personal E-mail<a href="mailto:jayson.virissimo@asu.edu" class="secondary-content"><i class="material-icons">mail</i></a></div></li>
-            <li class="collection-item"><div>Professional E-mail<a href="mailto:j.virissimo@jetpackops.com" class="secondary-content"><i class="material-icons">mail</i></a></div></li>
-          </ul>
+    </section>
+    
+    <section id='personal' class='col s9 m3 l2'>
+      <div class="card blue-grey darken-1 white-text">
+        <div class="card-image">
+          <img src="images/me.png">
         </div>
-        <div class="col l3 offset-l2 s6">
-          <h5 class="white-text">Social Media</h5>
-          <ul class="collection">
-            <li class="collection-item"><div>Github<a href="https://github.com/jaysonvirissimo" class="secondary-content"><i class="material-icons">code</i></a></div></li>
-            <li class="collection-item"><div>LinkedIn<a href="https://www.linkedin.com/in/jaysonvirissimo" class="secondary-content"><i class="material-icons">web</i></a></div></li>
-            <li class="collection-item"><div>Twitter<a href="https://twitter.com/jaysonvirissimo" class="secondary-content"><i class="material-icons">repeat</i></a></div></li>
-          </ul>
+        <div class="card-content">
+          <p>
+            I'm originally from SoCal, but am currently living in Scottsdale, Arizona. 
+            I like thinking big thoughts. 
+            I strive to write idiomatic and performant code. 
+            I hope to leave the world better off than I found it.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container"> &copy; 2015 Jayson Virissimo, All rights reserved.</div>
-    </div>
-  </footer>
+    </section>
+  </div>
+</main>
 
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   <script type="text/javascript" src="js/materialize.min.js"></script>
- </body>
- </html>
+<footer class="page-footer blue-grey darken-1">
+  <div class="container blue-grey darken-1">
+    <div class="row">
+      <div class="col l3 s6">
+        <h5 class="white-text">Contact Info</h5>
+        <ul class="collection">
+          <li class="collection-item"><div>Telephone<a href="tel:+16025618485" class="secondary-content"><i class="material-icons">phone</i></a></div></li>
+          <li class="collection-item"><div>Personal E-mail<a href="mailto:jayson.virissimo@asu.edu" class="secondary-content"><i class="material-icons">mail</i></a></div></li>
+          <li class="collection-item"><div>Professional E-mail<a href="mailto:j.virissimo@jetpackops.com" class="secondary-content"><i class="material-icons">mail</i></a></div></li>
+        </ul>
+      </div>
+      <div class="col l3 offset-l2 s6">
+        <h5 class="white-text">Social Media</h5>
+        <ul class="collection">
+          <li class="collection-item"><div>Github<a href="https://github.com/jaysonvirissimo" class="secondary-content"><i class="material-icons">code</i></a></div></li>
+          <li class="collection-item"><div>LinkedIn<a href="https://www.linkedin.com/in/jaysonvirissimo" class="secondary-content"><i class="material-icons">web</i></a></div></li>
+          <li class="collection-item"><div>Twitter<a href="https://twitter.com/jaysonvirissimo" class="secondary-content"><i class="material-icons">repeat</i></a></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container"> &copy; 2015 Jayson Virissimo, All rights reserved.</div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
