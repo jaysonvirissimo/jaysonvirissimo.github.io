@@ -1,4 +1,3 @@
-
 # Jayson Virissimo
 
 ![Profile Picture](http://virissimo.info/images/avatar.png)
@@ -22,7 +21,7 @@ Country: Arizona
 
 ## Summary
 
-I&#x27;m originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable and performant code. I hope to leave the world better off than I found it.
+I'm originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable and performant code. I hope to leave the world better off than I found it.
 
 ## Work
 
@@ -42,7 +41,7 @@ JetPack Enterprises is a Phoenix-based company that offers web, mobile, and desk
 * Obtained funding, negotiated contracts with state agencies and insurance companies
 * Taught myself computer programming for business automation tasks
 
-Bloom &amp; Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.
+Bloom & Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.
 
 ### Public Safety 911 Operator, [Mesa Police Department](http://www.mesaaz.gov/residents/police)
 ##### 2011-02-01 - 2013-03-31
@@ -55,7 +54,7 @@ Bloom &amp; Speak is a speech therapy company serving children throughout the Ph
 ### Transportation Security Officer, [Transportation Security Administration](http://www.tsa.gov/)
 ##### 2007-12-01 - 2011-01-31
 
-* Conducted covert auditing of airport security checkpoints as part of the &#x27;Red Team&#x27;
+* Conducted covert auditing of airport security checkpoints as part of the 'Red Team'
 
 
 
@@ -72,12 +71,16 @@ Bloom &amp; Speak is a speech therapy company serving children throughout the Ph
 * MAT 265 - Calculus for Engineers
 * PHI 313 - Probability, Evidence, and Decision
 
+### App Academy in Software Development
+##### 2014-10-06 - 2015-01-10
+
+
 
 
 
 ## Skills
 
-* Software Development (CoffeeScript, JavaScript, Ruby, Backbone.js, Bootstrap, Chrome Dev Tools, CSS, Git, HTML, jQuery, Jasmine, Markdown, Minitest, Rails, RSpec, SQL)
+* Software Development (CoffeeScript, JavaScript, Ruby, Backbone.js, Bootstrap, Materialize, Chrome Dev Tools, CSS, Git, HTML, jQuery, Jasmine, Markdown, Minitest, Rails, RSpec, SQL)
 
 ## Languages
 
