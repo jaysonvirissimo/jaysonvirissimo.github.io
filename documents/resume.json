@@ -35,10 +35,18 @@
   },
   "work": [
     {
+      "company": "Tuft & Needle",
+      "position": "Software Engineer",
+      "website": "https://www.tuftandneedle.com/",
+      "startDate": "2015-09-08",
+      "summary": "Tuft & Needle is an online mattress manufacture and retailer company based in Phoenix, Arizona and is a direct supplier of mattresses throughout America."
+    },
+    {
       "company": "JetPack Enterprises",
       "position": "Web Developer",
       "website": "http://jetpackstudio.com/",
       "startDate": "2015-02-01",
+      "endDate": "2015-08-21",
       "summary": "JetPack Enterprises is a Phoenix-based company that offers web, mobile, and desktop development and consulting services.",
       "highlights": [
         "Utilized the CoffeeScript, JavaScript, and Ruby programming languages in conjunction with the Ruby on Rails web framework",
@@ -105,12 +113,25 @@
   ],
   "skills": [
     {
-      "name": "Software Development",
+      "name": "Programming Languages",
       "keywords": [
         "CoffeeScript",
         "JavaScript",
         "Ruby",
+        "SQL"
+        ]
+    },
+    {
+      "name": "Web Application Frameworks",
+      "keywords": [
+        "Angular.js",
         "Backbone.js",
+        "Ruby on Rails"
+        ]
+    },
+    {
+      "name": "Web Technologies",
+      "keywords": [
         "Bootstrap",
         "Materialize",
         "Chrome Dev Tools",
@@ -121,9 +142,7 @@
         "Jasmine",
         "Markdown",
         "Minitest",
-        "Rails",
-        "RSpec",
-        "SQL"
+        "RSpec"
       ]
     }
   ],
