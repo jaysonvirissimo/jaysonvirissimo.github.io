@@ -1,9 +1,9 @@
 var goalHash = {
   logic: "Logic Problems",
   esperanto: "Learn Esperanto",
-  web: "Web Development Lessons",
   "pull-ups": "Pull Ups",
-  "review-design-patterns": "Review Design Patterns"
+  "review-design-patterns": "Review Design Patterns",
+  web: "Web Development Lessons"
 };
 
 var constructGoalWidget = function (slug) {
