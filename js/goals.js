@@ -1,31 +1,31 @@
 var goalHash = {
   algorithm: "Algorithm Practice",
-  math: "Math Problems",
   logic: "Logic Problems",
   esperanto: "Learn Esperanto",
   web: "Web Development Lessons",
-  "pull-ups": "Pull Ups"
+  "pull-ups": "Pull Ups",
+  "review-design-patterns": "Review Design Patterns"
 };
 
 var constructGoalWidget = function (slug) {
   var string = "<iframe src='https://www.beeminder.com/widget?slug=" +
   slug + "&username=jvirissimo' height='195px' width='250px'" +
   "frameborder='0px' ></iframe>";
-  
+
   return string;
 }
 
 var constructGoalWidgetTitle = function (title) {
   var string = "<p class='card-title black-text center-align'>" +
   title + "</p>";
-  
+
   return string;
 }
 
 var constructGoalWidgetCard = function (title, slug) {
   var string = "<div id='" + slug + "'" +
     " class='col s12 m6 l3'>" +
-    "<div class='card'>" + 
+    "<div class='card'>" +
     "<div class='card-content'>" +
     constructGoalWidgetTitle(title) +
     constructGoalWidget(slug) +
@@ -33,7 +33,7 @@ var constructGoalWidgetCard = function (title, slug) {
     "</div>" +
     "</div>" +
     "</div>";
-    
+
     return string;
 }
 
@@ -44,7 +44,7 @@ var addGoalWidgetCard = function (title, slug) {
 }
 
 var addAllGoalWidgetCards = function () {
-  Object.keys(goalHash).forEach(function (key) { 
+  Object.keys(goalHash).forEach(function (key) {
     var value = goalHash[key]
     addGoalWidgetCard(value, key);
   })
