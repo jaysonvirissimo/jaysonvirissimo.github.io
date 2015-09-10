@@ -1,5 +1,4 @@
 var goalHash = {
-  algorithm: "Algorithm Practice",
   logic: "Logic Problems",
   esperanto: "Learn Esperanto",
   web: "Web Development Lessons",
