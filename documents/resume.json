@@ -30,7 +30,7 @@
         "username": "JaysonVirissimo",
         "url": "https://twitter.com/JaysonVirissimo"
       }
-      
+
     ]
   },
   "work": [
@@ -103,12 +103,6 @@
         "MAT 265 - Calculus for Engineers",
         "PHI 313 - Probability, Evidence, and Decision"
       ]
-    },
-    {
-      "institution": "App Academy",
-      "area": "Software Development",
-      "startDate": "2014-10-06",
-      "endDate": "2015-01-10"
     }
   ],
   "skills": [

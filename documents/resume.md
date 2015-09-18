@@ -1,3 +1,4 @@
+
 # Jayson Virissimo
 
 ![Profile Picture](http://virissimo.info/images/avatar.png)
@@ -21,12 +22,18 @@ Country: Arizona
 
 ## Summary
 
-I'm originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable and performant code. I hope to leave the world better off than I found it.
+I&#x27;m originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable and performant code. I hope to leave the world better off than I found it.
 
 ## Work
 
+### Software Engineer, [Tuft &amp; Needle](https://www.tuftandneedle.com/)
+##### 2015-09-08 
+
+
+Tuft &amp; Needle is an online mattress manufacture and retailer company based in Phoenix, Arizona and is a direct supplier of mattresses throughout America.
+
 ### Web Developer, [JetPack Enterprises](http://jetpackstudio.com/)
-##### 2015-02-01 
+##### 2015-02-01 - 2015-08-21
 
 * Utilized the CoffeeScript, JavaScript, and Ruby programming languages in conjunction with the Ruby on Rails web framework
 * Performed full-stack development of web applications
@@ -41,7 +48,7 @@ JetPack Enterprises is a Phoenix-based company that offers web, mobile, and desk
 * Obtained funding, negotiated contracts with state agencies and insurance companies
 * Taught myself computer programming for business automation tasks
 
-Bloom & Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.
+Bloom &amp; Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.
 
 ### Public Safety 911 Operator, [Mesa Police Department](http://www.mesaaz.gov/residents/police)
 ##### 2011-02-01 - 2013-03-31
@@ -54,7 +61,7 @@ Bloom & Speak is a speech therapy company serving children throughout the Phoeni
 ### Transportation Security Officer, [Transportation Security Administration](http://www.tsa.gov/)
 ##### 2007-12-01 - 2011-01-31
 
-* Conducted covert auditing of airport security checkpoints as part of the 'Red Team'
+* Conducted covert auditing of airport security checkpoints as part of the &#x27;Red Team&#x27;
 
 
 
@@ -71,16 +78,14 @@ Bloom & Speak is a speech therapy company serving children throughout the Phoeni
 * MAT 265 - Calculus for Engineers
 * PHI 313 - Probability, Evidence, and Decision
 
-### App Academy in Software Development
-##### 2014-10-06 - 2015-01-10
-
-
 
 
 
 ## Skills
 
-* Software Development (CoffeeScript, JavaScript, Ruby, Backbone.js, Bootstrap, Materialize, Chrome Dev Tools, CSS, Git, HTML, jQuery, Jasmine, Markdown, Minitest, Rails, RSpec, SQL)
+* Programming Languages (CoffeeScript, JavaScript, Ruby, SQL)
+* Web Application Frameworks (Angular.js, Backbone.js, Ruby on Rails)
+* Web Technologies (Bootstrap, Materialize, Chrome Dev Tools, CSS, Git, HTML, jQuery, Jasmine, Markdown, Minitest, RSpec)
 
 ## Languages
 
