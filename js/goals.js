@@ -2,7 +2,6 @@ var goalHash = {
   logic: "Logic Problems",
   esperanto: "Learn Esperanto",
   "pull-ups": "Pull Ups",
-  "review-design-patterns": "Review Design Patterns",
   web: "Web Development Lessons"
 };
 
