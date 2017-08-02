@@ -91,14 +91,14 @@ describe('My home page', () => {
         assert(columns.length === 3, 'The `.row` should have three column elements.');
       });
 
-      it('should have a glyphicon icon', () => {
+      it('should have a Font Awesome icon', () => {
         columns.forEach(column => {
-          const icon = column.querySelector('.glyphicon');
+          const icon = column.querySelector('.fa');
           const iconClasses = Array.from(icon.classList);
           assert(icon, 'All row columns should have an icon.');
           assert(
-            iconClasses.find(className => className.startsWith('glyphicon-')),
-            'Icon classes need to start with `glyphicon-` or they will not work.'
+            iconClasses.find(className => className.startsWith('fa-')),
+            'Icon classes need to start with `fa-` or they will not work.'
           );
         });
       });
