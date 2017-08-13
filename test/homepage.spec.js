@@ -55,6 +55,9 @@ describe('My home page', () => {
 
         const p = item.querySelector('p');
         assert(p, 'Items should have `p` elements.');
+
+        const img = item.querySelector('img');
+        assert(p, 'Items should have `img` elements.');
       });
     });
   });
