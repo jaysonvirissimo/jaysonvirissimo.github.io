@@ -124,6 +124,26 @@ describe('My home page', () => {
     });
   });
 
+  describe('resume section', () => {
+    let resume;
+
+    beforeEach(() => resume = mockDocument.querySelector('#resume'));
+
+    it('should exist', () => {
+      assert.isOk(resume, 'There should be a `#resume` section.');
+    });
+
+    it('should contain a heading', () => {
+      const h1 = resume.querySelector('h1');
+      assert(h1.textContent.trim().toLowerCase() === 'résumé', 'The `h1` should be named properly.');
+    });
+
+    it('should contain links to resumes', () => {
+      const links = Array.from(resume.querySelectorAll('a'));
+      assert(links.length === 3, 'There should be three seperate resume links.');
+    });
+  });
+
   describe('footer', () => {
     let footer;
     beforeEach(() => footer = mockDocument.querySelector('.footer, footer'));
