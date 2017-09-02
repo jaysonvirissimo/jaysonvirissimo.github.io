@@ -6,11 +6,11 @@
     "email": "jayson.virissimo@asu.edu",
     "phone": "(602) 561-8485",
     "website": "http://virissimo.info/",
-    "summary": "I'm originally from SoCal, but am currently living in Scottsdale, Arizona. I like thinking big thoughts. I strive to write readable and performant code. I hope to leave the world better off than I found it.",
+    "summary": "I'm originally from SoCal, but am currently living in Phoenix, Arizona. I like thinking big thoughts. I strive to write readable and performant code. I hope to leave the world better off than I found it.",
     "location": {
-      "address": "8584 East Indian School Road, Unit A",
-      "postalCode": "AZ 85251",
-      "city": "Scottsdale",
+      "address": "9037 North 13th Place",
+      "postalCode": "AZ 85020",
+      "city": "Phoenix",
       "countryCode": "US",
       "region": "Arizona"
     },
@@ -59,7 +59,7 @@
       "position": "Co-founder",
       "website": "http://www.bloomandspeak.com/",
       "startDate": "2012-01-01",
-      "endDate": "2015-01-31",
+      "endDate": "2017-09-01",
       "summary": "Bloom & Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.",
       "highlights": [
         "Conducted market research, created business plan, developed short and long term strategies",
