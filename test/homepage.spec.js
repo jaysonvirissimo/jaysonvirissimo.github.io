@@ -22,17 +22,6 @@ describe('My home page', () => {
       assert(el, 'The `.navbar` should have a `.navbar-brand` element.');
       assert('jayson virissimo' == el.textContent.trim().toLowerCase(), 'My name should be displaying.');
     });
-
-    it('should have both professional and personal tabs', () => {
-      const menuItems = Array.from(navbar.querySelectorAll('.nav li a'));
-      assert(menuItems.length >= 2, 'The menu should have line items.');
-
-      const pro = menuItems.find(el => /professional/i.test(el.textContent));
-      assert(pro, 'The menu should have one link that reads "Professional".');
-
-      const personal = menuItems.find(el => /personal/i.test(el.textContent));
-      assert(personal, 'The menu should have one link that reads "Personal".');
-    });
   });
 
   describe('carousel', () => {
