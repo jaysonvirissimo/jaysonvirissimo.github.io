@@ -6,24 +6,6 @@ const sourceMarkup = fs.readFileSync('./src/index.html');
 const mockDocument = jsdom.jsdom(sourceMarkup);
 
 describe('My home page', () => {
-  describe('navbar', () => {
-    let navbar;
-
-    beforeEach(
-      () => navbar = mockDocument.querySelector('.navbar')
-    );
-
-    it('should exist', () => {
-      assert.isOk(navbar, 'There should be a `.navbar` element.');
-    });
-
-    it('should have my name as the brand', () => {
-      const el = navbar.querySelector('.navbar-brand');
-      assert(el, 'The `.navbar` should have a `.navbar-brand` element.');
-      assert('jayson virissimo' == el.textContent.trim().toLowerCase(), 'My name should be displaying.');
-    });
-  });
-
   describe('carousel', () => {
     let carousel;
 
