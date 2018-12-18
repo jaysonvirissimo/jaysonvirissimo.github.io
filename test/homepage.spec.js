@@ -6,32 +6,33 @@ const sourceMarkup = fs.readFileSync('./src/index.html');
 const mockDocument = jsdom.jsdom(sourceMarkup);
 
 describe('My home page', () => {
-  describe('carousel', () => {
-    let carousel;
+  describe('header', () => {
+    let header;
 
-    beforeEach(() => carousel = mockDocument.querySelector('.carousel'));
+    beforeEach(() => header = mockDocument.querySelector('header'));
 
     it('should exist', () => {
-      assert(carousel, 'There should be a `.carousel` element.');
+      assert(header);
     });
 
-    it('should have at least 3 carousel items', () => {
-      assert(carousel, 'There should be a `.carousel` element.');
-      const items = Array.from(carousel.querySelectorAll('.item'));
-      assert(items.length >= 3, 'The carousel should have `.item` elements.');
+    it('should have a SNES controller', () => {
+      const h1 = header.querySelector('h1');
+      const controller = h1.querySelector('i.snes-logo');
+      assert(controller);
+    });
 
-      items.forEach(item => {
-        const h1 = item.querySelector('h1');
-        assert(h1, 'Items should have `h1` elements.');
+    it('should have my name', () => {
+      const h1 = header.querySelector('h1');
+      assert(h1.textContent.trim(), 'Jayson Virissimo');
+    });
 
-        const p = item.querySelector('p');
-        assert(p, 'Items should have `p` elements.');
-
-        const img = item.querySelector('img');
-        assert(p, 'Items should have `img` elements.');
-      });
+    it('should have my title', () => {
+      const p = header.querySelector('p');
+      assert(p.textContent.trim(), 'Full-Stack Developer')
     });
   });
+
+  // TODO: Add biography
 
   describe('marketing grid', () => {
     let marketing;
@@ -95,6 +96,7 @@ describe('My home page', () => {
     });
   });
 
+  // TODO: Update resume
   describe('resume section', () => {
     let resume;
 
