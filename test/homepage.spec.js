@@ -100,36 +100,20 @@ describe('My professional website', () => {
 
   describe('footer', () => {
     let footer;
-    beforeEach(() => footer = mockDocument.querySelector('.footer, footer'));
+    beforeEach(() => footer = mockDocument.querySelector('footer'));
 
     it('should exist', () => {
-      assert.isOk(footer, 'There should be a `footer` element.');
-    });
-
-    it('should have a container', () => {
-      const el = footer.querySelector('.nes-container');
-      assert.isOk(el, 'A `.container` element should exist inside the `footer`.');
-    });
-  });
-
-  describe('footer-elements', () => {
-    let footer;
-    beforeEach(() => footer = mockDocument.querySelector('.footer, footer'));
-
-    it('should exist', () => {
-      assert.isOk(footer, 'There should be a `footer` element.');
+      assert.isOk(footer);
     });
 
     it('should have a title', () => {
-      const el = footer && footer.querySelector('.nes-container h3');
-      assert.isOk(el, 'The footer should contain an `h3` element.');
-      assert.isOk(el.textContent.trim() !== '', 'The `h3` element should have content.');
+      const h2 = footer.querySelector('h2');
+      assert(h2.textContent.trim().toLowerCase() === 'contact me');
     });
 
-    it('should have a paragraph', () => {
-      const el = footer && footer.querySelector('.nes-container p');
-      assert.isOk(el, 'The footer should contain a `p` element.');
-      assert.isOk(el.textContent.trim() !== '', 'The footer paragraph should have content.');
+    it('should contain icons', () => {
+      const icons = footer.querySelectorAll('i');
+      assert(icons.length);
     });
-  })
+  });
 });
