@@ -43,13 +43,13 @@ describe('My professional website', () => {
     });
 
     it('should have a cointainer', () => {
-      const el = marketing.querySelector('.container');
-      assert(el, 'The `.marketing` element should have a `.container` element.');
+      const el = marketing.querySelector('.nes-container');
+      assert(el);
     });
 
     it('should have a row', () => {
-      const el = marketing.querySelector('.container .row');
-      assert(el, 'The `.container` should have a `.row` element.');
+      const el = marketing.querySelector('.nes-container .row');
+      assert(el);
     });
 
     describe('columns', () => {
@@ -125,7 +125,7 @@ describe('My professional website', () => {
     });
 
     it('should have a container', () => {
-      const el = footer.querySelector('.container');
+      const el = footer.querySelector('.nes-container');
       assert.isOk(el, 'A `.container` element should exist inside the `footer`.');
     });
   });
@@ -139,13 +139,13 @@ describe('My professional website', () => {
     });
 
     it('should have a title', () => {
-      const el = footer && footer.querySelector('.container h3');
+      const el = footer && footer.querySelector('.nes-container h3');
       assert.isOk(el, 'The footer should contain an `h3` element.');
       assert.isOk(el.textContent.trim() !== '', 'The `h3` element should have content.');
     });
 
     it('should have a paragraph', () => {
-      const el = footer && footer.querySelector('.container p');
+      const el = footer && footer.querySelector('.nes-container p');
       assert.isOk(el, 'The footer should contain a `p` element.');
       assert.isOk(el.textContent.trim() !== '', 'The footer paragraph should have content.');
     });
