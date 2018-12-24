@@ -5,7 +5,7 @@ const { assert } = require('chai');
 const sourceMarkup = fs.readFileSync('./src/index.html');
 const mockDocument = jsdom.jsdom(sourceMarkup);
 
-describe('My home page', () => {
+describe('My professional website', () => {
   describe('header', () => {
     let header;
 
@@ -33,7 +33,6 @@ describe('My home page', () => {
   });
 
   // TODO: Add biography
-
   describe('marketing grid', () => {
     let marketing;
 
@@ -103,17 +102,17 @@ describe('My home page', () => {
     beforeEach(() => resume = mockDocument.querySelector('#resume'));
 
     it('should exist', () => {
-      assert.isOk(resume, 'There should be a `#resume` section.');
+      assert.isOk(resume);
     });
 
-    it('should contain a heading', () => {
-      const h1 = resume.querySelector('h1');
-      assert(h1.textContent.trim().toLowerCase() === 'résumé', 'The `h1` should be named properly.');
+    it('should contain a title', () => {
+      const h2 = resume.querySelector('h2');
+      assert(h2.textContent.trim().toLowerCase() === 'résumé');
     });
 
     it('should contain links to resumes', () => {
       const links = Array.from(resume.querySelectorAll('a'));
-      assert(links.length === 3, 'There should be three seperate resume links.');
+      assert(links.length === 3);
     });
   });
 
