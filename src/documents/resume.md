@@ -16,14 +16,14 @@ I hope to leave the world better off than I found it.
 
 ### Skills {#skills}
 
-* Back-end web development
-  : Utilizes object-oriented design principles to accurately represent business processes while maintaining flexibility for future changes to requirements.
+* Full-stack web development
+  : Utilizes object-oriented and functional design principles to automate business processes while maintaining flexibility for requirement changes.
 
-* Front-end web development
-  : Harnesses industry standard frameworks combined with minimalistic, functional JavaScript, to create effective user interfaces.
+* Project Management
+  : Applies agile, lean, and traditional work management techniques to direct project initiation, planning, and execution.
 
 * Cybersecurity
-  : Keeps up-to-date on common web application attacks and their corresponding countermeasures.
+  : Keeps up-to-date on common web application attacks and uses this knowledge to keep systems safe.
 
 -------
 
@@ -31,10 +31,10 @@ I hope to leave the world better off than I found it.
 
 1. Ruby
 1. Ruby on Rails
-1. Git/Github
-1. HTML/CSS
-1. macOS
-1. Linux
+1. Git / Github
+1. HTML / CSS
+1. C
+1. UNIX (Kali Linux, macOS)
 1. JavaScript
 1. jQuery
 1. React
@@ -44,9 +44,15 @@ I hope to leave the world better off than I found it.
 ### Experience {#experience}
 
 [Tuft & Needle](https://www.tuftandneedle.com/)
+: *Engineering Lead*
+  __2019-01-01 -- Present__
+     Lead a team of 5 other engineers.
+     Integrated main application with Textline API.
+     Acted a point of contact for customer experience and retail teams.
+
 : *Software Engineer*
-  __2015-09-08 -- Present__
-    Refactored payment processing systems.
+  __2015-09-08 -- 2018-12-31__
+    Refactored 3 payment processing systems to each use the same common interface.
     Integrated main application with Affirm API.
     Lead the effort to move applications from Rails 4 to Rails 5.
 
@@ -75,8 +81,16 @@ I hope to leave the world better off than I found it.
 ### Formal Education
 
 [Arizona State Univesity](https://asu.edu)
-: *Political Science, BS*
+: *Political Science, Bachelor of Science*
   __2005-08-20 -- 2009-05-11__
+
+[Dartmouth College](https://home.dartmouth.edu/)
+: *C Programming with Linux, Professional Certificate*
+  __2018-10-02 -- Present__
+
+[University of Maryland](https://www.umd.edu/)
+: *Agile Project Management, Professional Certificate*
+  __2018-09-22 -- Present__
 
 ------
 
