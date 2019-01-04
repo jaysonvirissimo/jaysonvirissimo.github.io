@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 test_output = `npm test`
 
 if test_output.include?('failing')

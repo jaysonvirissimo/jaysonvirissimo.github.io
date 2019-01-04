@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 puts 'Cloning markdown-resume repo...'
 `git clone https://github.com/there4/markdown-resume.git`
 
