@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jaysonvirissimo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://virissimo.info
+  * I am jaysonvirissimo (https://keybase.io/jaysonvirissimo) on keybase.
+  * I have a public key ASAniLy9D6dtvAnOJBkfmw2m_Jhgm9mBpkKG9WLtRjKGhgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202788bcbd0fa76dbc09ce24191f9b0da6fc98609bd981a64286f562ed463286860a",
+      "host": "keybase.io",
+      "kid": "01202788bcbd0fa76dbc09ce24191f9b0da6fc98609bd981a64286f562ed463286860a",
+      "uid": "63536a2d0adc514ffe35f2cee7c23f19",
+      "username": "jaysonvirissimo"
+    },
+    "merkle_root": {
+      "ctime": 1547607135,
+      "hash": "55eba2b36eec79c953559e0dc408ec82dfce8a38934a983eb35478d236c7476c113b690c00bb520443beb69540dc3642bffcbd4acdd86af3c9330931b3cdc12e",
+      "hash_meta": "171207e603c33d976b8f6ff823ac9dfb2a24033dd3c85fd3eee214c5cc993189",
+      "seqno": 4414873
+    },
+    "service": {
+      "entropy": "AGbecVGWXaCY+1nWtuay/8me",
+      "hostname": "virissimo.info",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.1"
+  },
+  "ctime": 1547607145,
+  "expire_in": 504576000,
+  "prev": "8d608aff1c54eb705551cdafbb0b2a21d82be8f417806193c450b9f2d95426f4",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJ4i8vQ+nbbwJziQZH5sNpvyYYJvZgaZChvVi7UYyhoYKp3BheWxvYWTESpcCBMQgjWCK/xxU63BVUc2vuwsqIdgr6PQXgGGTxFC58tlUJvTEIAg408Qsgqa4xDCuuGI5cvZzmpX9obawippi16bogMpaAgHCo3NpZ8RA4fCUyVhF+lL/q+tqWT1TL+am8SmmFXT78oujyPOwy+c61LpsUUWWrZ2xo1iah88F9qRa5PMoNB9P5GTfIp/+C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMokjfEJh4brX7vpcT34QgRc9tfOh5mitMO8Iqr0/ytzo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jaysonvirissimo
+
+==================================================================
