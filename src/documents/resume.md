@@ -46,9 +46,9 @@ I hope to leave the world better off than I found it.
 [Tuft & Needle](https://www.tuftandneedle.com/)
 : *Engineering Lead*
   __2019-01-01 -- Present__
-     Lead a team of 5 other engineers.
-     Integrated main application with Textline API.
-     Acted a point of contact for customer experience and retail teams.
+    Acted as point of contact between developers and the customer experience and retail teams.
+    Lead a team of 4 software engineers.
+    Integrated main application with Textline API.
 
 : *Software Engineer*
   __2015-09-08 -- 2018-12-31__

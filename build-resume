@@ -1,17 +1,35 @@
 #!/usr/bin/env ruby
 
-puts 'Cloning markdown-resume repo...'
-`git clone https://github.com/there4/markdown-resume.git`
+if Dir['markdown-resume']
+  puts 'markdown-resume repo has already been cloned.'
+else
+  puts 'Cloning markdown-resume repo...'
+  `git clone https://github.com/there4/markdown-resume.git`
+end
 
-puts 'Installing PHP and Composer...'
-`brew install php71 composer`
+if `which php71`
+  puts 'PHP is already installed.'
+else
+  puts 'Installing PHP...'
+  `brew install php71 composer`
+end
 
-puts 'Installing dependencies...'
-`(cd markdown-resume; brew cask install wkhtmltopdf; gem install wkhtmltopdf; composer install)`
+if `which wkhtmltopdf`
+  puts 'wkhtmltopdf is already installed.'
+else
+  puts 'Installing wkhtmltopdf...'
+  `gem install wkhtmltopdf`
+end
+
+if `which composer`
+  puts 'Composer is already installed.'
+else
+  puts 'Installing Composer...'
+  `(cd markdown-resume; composer install)`
+end
 
 puts 'Building resume documents...'
 `cp src/documents/resume.md markdown-resume/examples/source/resume-candidate.md`
 `(cd markdown-resume; ./bin/md2resume html examples/source/resume-candidate.md examples/output/)`
 `mv markdown-resume/examples/output/resume-candidate.html src/documents/resume.html`
-
-puts 'Done!'
+`(cd src/documents; wkhtmltopdf resume.html resume.pdf)`
