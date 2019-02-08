@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 if Dir['markdown-resume']
   puts 'markdown-resume repo has already been cloned.'
@@ -32,4 +33,5 @@ puts 'Building resume documents...'
 `cp src/documents/resume.md markdown-resume/examples/source/resume-candidate.md`
 `(cd markdown-resume; ./bin/md2resume html examples/source/resume-candidate.md examples/output/)`
 `mv markdown-resume/examples/output/resume-candidate.html src/documents/resume.html`
-`(cd src/documents; wkhtmltopdf resume.html resume.pdf)`
+`(cd markdown-resume; ./bin/md2resume pdf examples/source/resume-candidate.md examples/output/)`
+`mv markdown-resume/examples/output/resume-candidate.pdf src/documents/resume.pdf`
