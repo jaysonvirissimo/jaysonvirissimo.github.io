@@ -1,5 +1,5 @@
 # Jayson Virissimo
-## Software Engineer
+## Full-Stack Developer & Engineering Manager
 
 > [jayson.virissimo@asu.edu](jayson.virissimo@asu.edu)
 > (602) 561-8485
@@ -8,7 +8,7 @@
 
 ### Profile {#profile}
 I'm originally from SoCal, but am currently living in Phoenix, Arizona.
-I like thinking big thoughts.
+I love empowering others to learn, grow, and create.
 I strive to write readable and performant code.
 I hope to leave the world better off than I found it.
 
@@ -36,7 +36,7 @@ I hope to leave the world better off than I found it.
 1. C
 1. UNIX (Kali Linux, macOS)
 1. JavaScript
-1. jQuery
+1. SQL (PostgreSQL)
 1. React
 
 ------
@@ -44,11 +44,11 @@ I hope to leave the world better off than I found it.
 ### Experience {#experience}
 
 [Tuft & Needle](https://www.tuftandneedle.com/)
-: *Engineering Lead*
+: *Engineering Manager*
   __2019-01-01 -- Present__
-    Acted as point of contact between developers and the customer experience and retail teams.
-    Lead a team of 4 software engineers.
-    Integrated main application with Textline API.
+    Acted as primary engineering point of contact for customer experience and retail teams.
+    Managed a team of 4 full-time software engineers and performed tech lead role for 4 contractors.
+    Participated as individual contributor on development of e-commerce platforms for Beautyrest and Serta brands.
 
 : *Software Engineer*
   __2015-09-08 -- 2018-12-31__
@@ -84,13 +84,9 @@ I hope to leave the world better off than I found it.
 : *Political Science, Bachelor of Science*
   __2005-08-20 -- 2009-05-11__
 
-[Dartmouth College](https://home.dartmouth.edu/)
-: *C Programming with Linux, Professional Certificate*
-  __2018-10-02 -- Present__
-
-[University of Maryland](https://www.umd.edu/)
-: *Agile Project Management, Professional Certificate*
-  __2018-09-22 -- Present__
+[Udacity](https://www.udacity.com/)
+: *React, Nanodegree*
+  __2019-12-01 -- Present__
 
 ------
 
