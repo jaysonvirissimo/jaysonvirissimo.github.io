@@ -15,19 +15,8 @@ else
   `brew install php71 composer`
 end
 
-if `which wkhtmltopdf`
-  puts 'wkhtmltopdf is already installed.'
-else
-  puts 'Installing wkhtmltopdf...'
-  `gem install wkhtmltopdf`
-end
-
-if `which composer`
-  puts 'Composer is already installed.'
-else
-  puts 'Installing Composer...'
-  `(cd markdown-resume; composer install)`
-end
+puts 'Ensuring Composer is up to date...'
+`(cd markdown-resume; composer install)`
 
 puts 'Building resume documents...'
 `cp src/documents/resume.md markdown-resume/examples/source/resume-candidate.md`

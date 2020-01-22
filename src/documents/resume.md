@@ -7,9 +7,9 @@
 ------
 
 ### Profile {#profile}
-I'm originally from SoCal, but am currently living in Phoenix, Arizona.
+I'm from SoCal, but now live in Phoenix, Arizona.
 I love empowering others to learn, grow, and create.
-I strive to write readable and performant code.
+I strive to write readable, secure, and performant code.
 I hope to leave the world better off than I found it.
 
 ------
@@ -19,11 +19,11 @@ I hope to leave the world better off than I found it.
 * Full-stack web development
   : Utilizes object-oriented and functional design principles to automate business processes while maintaining flexibility for requirement changes.
 
-* Project Management
-  : Applies agile, lean, and traditional work management techniques to direct project initiation, planning, and execution.
-
 * Cybersecurity
   : Keeps up-to-date on common web application attacks and uses this knowledge to keep systems safe.
+
+* Project Management
+  : Applies agile, lean, and traditional work management techniques to direct project initiation, planning, and execution.
 
 -------
 
@@ -47,8 +47,8 @@ I hope to leave the world better off than I found it.
 : *Engineering Manager*
   __2019-01-01 -- Present__
     Acted as primary engineering point of contact for customer experience and retail teams.
-    Managed a team of 4 full-time software engineers and performed tech lead role for 4 contractors.
-    Participated as individual contributor on development of e-commerce platforms for Beautyrest and Serta brands.
+    Managed a team of 5 full-time software engineers and performed tech lead role for 4 contractors.
+    Participated as individual contributor on development and launch of new e-commerce platforms for Beautyrest and Serta brands.
 
 : *Software Engineer*
   __2015-09-08 -- 2018-12-31__
