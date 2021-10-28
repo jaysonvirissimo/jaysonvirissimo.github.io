@@ -1,26 +1,26 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-if Dir['markdown-resume']
-  puts 'markdown-resume repo has already been cloned.'
+if `which resume`
+  puts 'resume-cli is already installed. Skipping step...'
 else
-  puts 'Cloning markdown-resume repo...'
-  `git clone https://github.com/there4/markdown-resume.git`
+  puts 'Installing resume-cli...'
+  `npm install -g resume-cli`
+  `npm install -g jsonresume-theme-spartan`
+  puts 'Completed installing resume-cli!'
 end
 
-if `which php71`
-  puts 'PHP is already installed.'
+puts 'Checking validity of resume.json...'
+
+if `(cd src/documents; resume validate)`
+  puts 'Valid!'
 else
-  puts 'Installing PHP...'
-  `brew install php71 composer`
+  puts 'Aborting early due to invalid schema...'
+  return nil
 end
 
-puts 'Ensuring Composer is up to date...'
-`(cd markdown-resume; composer install)`
+puts 'Exporting to PDF...'
+`(cd src/documents; resume export resume.pdf --format pdf --theme spartan)` && (puts 'PDF exported!')
 
-puts 'Building resume documents...'
-`cp src/documents/resume.md markdown-resume/examples/source/resume-candidate.md`
-`(cd markdown-resume; ./bin/md2resume html examples/source/resume-candidate.md examples/output/)`
-`mv markdown-resume/examples/output/resume-candidate.html src/documents/resume.html`
-`(cd markdown-resume; ./bin/md2resume pdf examples/source/resume-candidate.md examples/output/)`
-`mv markdown-resume/examples/output/resume-candidate.pdf src/documents/resume.pdf`
+puts 'Exporting to HTML...'
+`(cd src/documents; resume export resume.html --format html --theme spartan)` && (puts 'HTML exported!')
