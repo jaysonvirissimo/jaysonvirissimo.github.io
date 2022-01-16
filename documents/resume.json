@@ -33,7 +33,7 @@
     },
     {
       "company": "Tuft & Needle",
-      "position": "Engineering Manager, Customer Experience",
+      "position": "Engineering Manager, Customer Experience & Retail Experience",
       "startDate": "2019-01-01",
       "endDate": "2021-02-15",
       "highlights": []
@@ -92,22 +92,26 @@
   ],
   "skills": [
     {
-      "name": "Full-stack web development Languages",
+      "name": "Software development",
       "keywords": [
-        "Ruby",
-        "JavaScript",
-        "SQL",
+        "CSS",
         "HTML",
-        "CSS"
+        "JavaScript",
+        "Rails",
+        "React",
+        "Ruby",
+        "SQL"
       ]
     },
     {
-      "name": "Cybersecurity",
-      "keywords": []
-    },
-    {
-      "name": "Project management",
-      "keywords": []
+      "name": "Management",
+      "keywords": [
+        "Developer mentorship",
+        "External hiring",
+        "Project management",
+        "Roadmap building",
+        "Succession planning"
+      ]
     }
   ],
   "languages": [
