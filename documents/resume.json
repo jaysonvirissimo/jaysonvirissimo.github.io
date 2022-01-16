@@ -69,11 +69,7 @@
       "startDate": "2012-01-01",
       "endDate": "2017-09-01",
       "summary": "Bloom & Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.",
-      "highlights": [
-        "Conducted market research, created business plan, developed short and long term strategies",
-        "Obtained funding, negotiated contracts with state agencies and insurance companies",
-        "Taught myself computer programming for business automation tasks"
-      ]
+      "highlights": []
     },
     {
       "company": "Mesa Police Department",
@@ -81,10 +77,7 @@
       "website": "http://www.mesaaz.gov/residents/police",
       "startDate": "2011-02-01",
       "endDate": "2013-03-31",
-      "highlights": [
-        "Answered emergency phone calls, made timely appropriate responses based on department policy and personal judgment",
-        "Relayed information to first-responders, coordinated dispatch, gave instructions to callers in life-threatening situations"
-      ]
+      "highlights": []
     }
   ],
   "education": [
