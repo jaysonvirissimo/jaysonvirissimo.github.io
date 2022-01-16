@@ -44,7 +44,6 @@
       "website": "https://www.tuftandneedle.com/",
       "startDate": "2015-09-08",
       "endDate": "2018-12-31",
-      "summary": "Tuft & Needle is an online mattress manufacture and retailer company based in Phoenix, Arizona and is a direct supplier of mattresses throughout America.",
       "highlights": []
     },
     {
@@ -53,7 +52,6 @@
       "website": "http://jetpackstudio.com/",
       "startDate": "2015-02-01",
       "endDate": "2015-08-21",
-      "summary": "JetPack Enterprises is a Phoenix-based company that offers web, mobile, and desktop development and consulting services.",
       "highlights": [
         "Utilized the CoffeeScript, JavaScript, and Ruby programming languages in conjunction with the Ruby on Rails web framework",
         "Performed full-stack development of web applications",
@@ -66,7 +64,6 @@
       "website": "http://www.bloomandspeak.com/",
       "startDate": "2012-01-01",
       "endDate": "2017-09-01",
-      "summary": "Bloom & Speak is a speech therapy company serving children throughout the Phoenix-Metro Area.",
       "highlights": []
     },
     {
