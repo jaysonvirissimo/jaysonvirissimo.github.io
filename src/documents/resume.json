@@ -30,7 +30,7 @@
       "position": "Engineering Manager, Purchase Experience",
       "website": "https://www.tuftandneedle.com/",
       "startDate": "2019-01-01",
-      "summary": "Tuft & Needle is an online mattress manufacture and retailer company based in Phoenix, Arizona and is a direct supplier of mattresses throughout America."
+      "highlights": []
     },
     {
       "company": "Tuft & Needle",
@@ -38,7 +38,7 @@
       "website": "https://www.tuftandneedle.com/",
       "startDate": "2019-01-01",
       "endDate": "2021-02-15",
-      "summary": "Tuft & Needle is an online mattress manufacture and retailer company based in Phoenix, Arizona and is a direct supplier of mattresses throughout America."
+      "highlights": []
     },
     {
       "company": "Tuft & Needle",
@@ -46,7 +46,8 @@
       "website": "https://www.tuftandneedle.com/",
       "startDate": "2015-09-08",
       "endDate": "2018-12-31",
-      "summary": "Tuft & Needle is an online mattress manufacture and retailer company based in Phoenix, Arizona and is a direct supplier of mattresses throughout America."
+      "summary": "Tuft & Needle is an online mattress manufacture and retailer company based in Phoenix, Arizona and is a direct supplier of mattresses throughout America.",
+      "highlights": []
     },
     {
       "company": "JetPack Enterprises",
