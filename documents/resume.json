@@ -49,7 +49,6 @@
     {
       "company": "JetPack Enterprises",
       "position": "Web Developer",
-      "website": "http://jetpackstudio.com/",
       "startDate": "2015-02-01",
       "endDate": "2015-08-21",
       "highlights": [
@@ -69,7 +68,7 @@
     {
       "company": "Mesa Police Department",
       "position": "Public Safety 911 Operator",
-      "website": "http://www.mesaaz.gov/residents/police",
+      "website": "https://www.mesaazpolice.gov/home-police",
       "startDate": "2011-02-01",
       "endDate": "2013-03-31",
       "highlights": []
