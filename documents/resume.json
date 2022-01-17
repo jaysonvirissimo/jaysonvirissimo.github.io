@@ -28,21 +28,25 @@
       "company": "Tuft & Needle",
       "position": "Engineering Manager, Customer Experience & Purchase Experience",
       "startDate": "2019-01-01",
-      "highlights": []
+      "highlights": [
+        "Lead team responsible for checkout, payments, promotions, and retail POS system", 
+        "Improved checkout performance and fixed security vulnerabilities",
+        "Lead engineering team responsible for customer experience tooling"
+      ]
     },
     {
       "company": "Tuft & Needle",
       "position": "Software Engineer",
       "startDate": "2015-09-08",
       "endDate": "2018-12-31",
-      "highlights": []
+      "highlights": ["Built payment integrations, customer experience tooling, and supply chain automation systems using primarily Ruby and JavaScript"]
     },
     {
       "company": "JetPack Enterprises",
       "position": "Web Developer",
       "startDate": "2015-02-01",
       "endDate": "2015-08-21",
-      "highlights": []
+      "highlights": ["Repaired, refactored, and added features to legacy software projects"]
     },
     {
       "company": "Bloom & Speak Bilingual Tx",
@@ -73,16 +77,6 @@
         "React",
         "Ruby",
         "SQL"
-      ]
-    },
-    {
-      "name": "Management",
-      "keywords": [
-        "Developer mentorship",
-        "External hiring",
-        "Project management",
-        "Roadmap building",
-        "Succession planning"
       ]
     }
   ]
