@@ -81,13 +81,7 @@
       "studyType": "Bachelor of Science",
       "startDate": "2005-08-20",
       "endDate": "2009-05-11",
-      "courses": [
-        "CSE 110 - Introduction to Programming in Java",
-        "CSE 120 - Fundamentals of Digital Design",
-        "CSE 200 - Object Oriented Programming and Data Structures",
-        "MAT 265 - Calculus for Engineers",
-        "PHI 313 - Probability, Evidence, and Decision"
-      ]
+      "courses": []
     }
   ],
   "skills": [
