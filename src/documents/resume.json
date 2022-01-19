@@ -26,13 +26,19 @@
   "work": [
     {
       "company": "Tuft & Needle",
-      "position": "Engineering Manager, Customer Experience & Purchase Experience",
+      "position": "Engineering Manager, Purchase Experience",
       "startDate": "2019-01-01",
       "highlights": [
         "Lead team responsible for checkout, payments, promotions, and retail POS system", 
-        "Improved checkout performance and fixed security vulnerabilities",
-        "Lead engineering team responsible for customer experience tooling"
+        "Improved checkout performance and fixed security vulnerabilities"
       ]
+    },
+    {
+      "company": "Tuft & Needle",
+      "position": "Engineering Manager, Customer Experience & Retail Experience",
+      "startDate": "2019-01-01",
+      "endDate": "2021-02-15",
+      "highlights": ["Lead engineering team responsible for customer experience tooling"]
     },
     {
       "company": "Tuft & Needle",
@@ -53,6 +59,13 @@
       "position": "Co-founder",
       "startDate": "2012-01-01",
       "endDate": "2017-09-01",
+      "highlights": []
+    },
+    {
+      "company": "Mesa Police Department",
+      "position": "Public Safety 911 Operator",
+      "startDate": "2011-02-01",
+      "endDate": "2013-03-31",
       "highlights": []
     }
   ],
@@ -78,6 +91,26 @@
         "Ruby",
         "SQL"
       ]
+    },
+    {
+      "name": "Management",
+      "keywords": [
+        "Developer mentorship",
+        "External hiring",
+        "Project management",
+        "Roadmap building",
+        "Succession planning"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "A2 (Certificado inicial de português língua estrangeira)"
     }
   ]
 }
