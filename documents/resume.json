@@ -79,7 +79,17 @@
       "courses": []
     }
   ],
-  "skills": [
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "A2 (Certificado inicial de português língua estrangeira)"
+    }
+   ],
+   "skills": [
     {
       "name": "Software development",
       "keywords": [
