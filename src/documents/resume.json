@@ -29,30 +29,55 @@
       "position": "Engineering Manager, Purchase Experience",
       "startDate": "2019-01-01",
       "highlights": [
-        "Lead team responsible for checkout, payments, promotions, and retail POS system", 
-        "Improved checkout performance and fixed security vulnerabilities"
-      ]
+        "Improved checkout performance and fixed security vulnerabilities",
+        "Implemented idempotent charge step to avoid double charges",
+        "Designed and implemented shipping address validation result caching",
+        "Introduced new marketing user role and associated authorization logic",
+        "Updated register to scrub out-of-stock items from customer carts"
+      ],
+      "summary": "Lead team responsible for checkout, payments, promotions, and retail POS system"
     },
     {
       "company": "Tuft & Needle",
       "position": "Engineering Manager, Customer Experience & Retail Experience",
       "startDate": "2019-01-01",
       "endDate": "2021-02-15",
-      "highlights": ["Lead engineering team responsible for customer experience tooling"]
+      "highlights": [
+        "Automated FedEx shipment handling requests",
+        "Implemented secure deactivation of user records",
+        "Integrated with Textline API and implemented double opt-in flow",
+        "Add custom fraud check rules for Affirm and PayPal payment methods",
+        "Migrate grape endpoints to traditional Rails controllers and eliminate it as a dependency"
+      ],
+      "summary": "Lead engineering team responsible for customer experience tooling"
     },
     {
       "company": "Tuft & Needle",
       "position": "Software Engineer",
       "startDate": "2015-09-08",
       "endDate": "2018-12-31",
-      "highlights": ["Built payment integrations, customer experience tooling, and supply chain automation systems using primarily Ruby and JavaScript"]
+      "highlights": [
+        "Upgraded a ~300 model ~200 controller Rails app from 4.2 to 5.0, 5.1, and then 5.2",
+        "Upgraded Ruby from 2.4 to 2.5, and then 2.6",
+        "Installed and configured system to measure production code usage and identified unused execution paths",
+        "Fixed N + 1 queries in purchase order reporting module",
+        "Designed and implemented sales tax service outage fallback system",
+        "Discovered and hardened against SQL-injection vulnerabilities in operations portal",
+        "Designed and implemented sale source attribution system",
+        "Designed and implemented passwordless POS system authentication",
+        "Add DOS attack protection to high throughput grape endpoints",
+        "Installed and configured realtime production performance monitoring",
+        "Introduced automated performance testing and reduced product queries 22-fold"
+      ],
+      "summary": "Built tools for customer experience users and automated product fulfillment flows"
     },
     {
       "company": "JetPack Enterprises",
       "position": "Web Developer",
       "startDate": "2015-02-01",
       "endDate": "2015-08-21",
-      "highlights": ["Repaired, refactored, and added features to legacy software projects"]
+      "highlights": [],
+      "summary": "Repaired, refactored, and added features to legacy software projects"
     },
     {
       "company": "Bloom & Speak Bilingual Tx",
@@ -111,16 +136,6 @@
         "Roadmap building",
         "Succession planning"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "Portuguese",
-      "fluency": "A2 (Certificado inicial de português língua estrangeira)"
     }
   ]
 }
