@@ -29,6 +29,10 @@
       "position": "Engineering Manager, Purchase Experience",
       "startDate": "2019-01-01",
       "highlights": [
+        "Developed coding challenge and associated grading rubrick",
+        "Created succession plan for myself and my direct reports",
+        "Helped my direct reports develop career progression plans and learning goals",
+        "Lead standups, grooming, planning, and retrospectives",
         "Improved checkout performance and fixed security vulnerabilities",
         "Implemented idempotent charge step to avoid double charges",
         "Designed and implemented shipping address validation result caching",
