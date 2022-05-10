@@ -25,9 +25,15 @@
   },
   "work": [
     {
+      "company": "Handshake",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-05-09"
+    },
+    {
       "company": "Tuft & Needle",
       "position": "Engineering Manager, Purchase Experience",
       "startDate": "2021-02-16",
+      "endDate": "2022-04-29",
       "highlights": [
         "Developed coding challenge and associated grading rubrick",
         "Created succession plan for myself and my direct reports",
