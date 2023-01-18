@@ -7,6 +7,7 @@ else
   puts 'Installing resume-cli...'
   `npm install -g resume-cli`
   `npm install -g jsonresume-theme-spartan`
+  `npm install -g jsonresume-theme-onepage`
   puts 'Completed installing resume-cli!'
 end
 
@@ -20,7 +21,7 @@ else
 end
 
 puts 'Exporting to PDF...'
-`(cd src/documents; resume export resume.pdf --format pdf --theme spartan)` && (puts 'PDF exported!')
+`(cd src/documents; resume export resume.pdf --format pdf --theme one-page)` && (puts 'PDF exported!')
 
 puts 'Exporting to HTML...'
 `(cd src/documents; resume export resume.html --format html --theme spartan)` && (puts 'HTML exported!')
