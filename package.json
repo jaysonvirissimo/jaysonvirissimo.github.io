@@ -4,8 +4,13 @@
   "description": "The personal and professional home page of Jayson Virissimo",
   "private": true,
   "scripts": {
+    "build-html-resume": "echo 'Exporting to HTML...' && cd src/documents && resume export resume.html --format html --theme spartan",
+    "build-pdf-resume": "echo 'Exporting to PDF...' && cd src/documents; resume export resume.pdf --theme ../../node_modules/jsonresume-theme-spartan",
+    "build-resumes": "npm run validate && npm run build-html-resume && npm run build-pdf-resume",
+    "preinstall": "npm install -g resume-cli",
     "start": "browser-sync start --server ./src --files ./src",
-    "test": "mocha --compilers js:babel-register test/*.spec.js"
+    "test": "mocha --compilers js:babel-register test/*.spec.js",
+    "validate": "echo 'Validating resume.json...' && cd src/documents && resume validate && echo 'Validated!'"
   },
   "author": "Jayson Virissimo <jayson.virissimo@asu.edu>",
   "devDependencies": {

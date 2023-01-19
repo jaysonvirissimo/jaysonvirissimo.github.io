@@ -32,6 +32,7 @@
       "highlights": [
         "Replaced student inbox RESTful endpoints with GraphQL types and mutations",
         "Migrated expensive operations out of the monolith into messaging miniservice",
+        "Participated in hackathon project that inspired production feature",
         "Mentored interns and junior developers"
       ]
     },
