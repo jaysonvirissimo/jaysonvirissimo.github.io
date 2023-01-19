@@ -10,10 +10,12 @@ git clone https://github.com/jaysonvirissimo/jaysonvirissimo.github.io.git
 cd jaysonvirissimo.github.io/
 git checkout development
 ```
-Use `npm start` to run the site locally; `npm test` runs the test suite.
+Install dependencies with `npm install`.
+Use `npm start` to run the site locally. 
+`npm test` runs the test suite.
 
-`./build-resume` will rebuild the HTML and PDF resumes based on changes to the markdown version.
+`./build-resume` rebuilds the HTML and PDF resumes based on changes to the JSON version.
 
 `./deploy` runs the tests suite and conditionally commits all the static assets to `master` branch and deploys to production.
 
-The deploy scripts assume you are running macOS with Homebrew.
+The deploy scripts assume you are running macOS with Homebrew + Ruby.
