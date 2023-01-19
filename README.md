@@ -14,8 +14,6 @@ Install dependencies with `npm install`.
 Use `npm start` to run the site locally. 
 `npm test` runs the test suite.
 
-`./build-resume` rebuilds the HTML and PDF resumes based on changes to the JSON version.
+`npm run build-resumes` rebuilds the HTML and PDF resumes based on changes to the JSON version.
 
-`./deploy` runs the tests suite and conditionally commits all the static assets to `master` branch and deploys to production.
-
-The deploy scripts assume you are running macOS with Homebrew + Ruby.
+`npm run deploy` runs the tests suite and conditionally commits all the static assets to `master` branch and deploys to production.
