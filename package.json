@@ -7,6 +7,7 @@
     "build-html-resume": "echo 'Exporting to HTML...' && cd src/documents && resume export resume.html --format html --theme spartan",
     "build-pdf-resume": "echo 'Exporting to PDF...' && cd src/documents; resume export resume.pdf --theme ../../node_modules/jsonresume-theme-spartan",
     "build-resumes": "npm run validate && npm run build-html-resume && npm run build-pdf-resume",
+    "deploy": "npm run test && git subtree push --prefix src origin master",
     "preinstall": "npm install -g resume-cli",
     "start": "browser-sync start --server ./src --files ./src",
     "test": "mocha --compilers js:babel-register test/*.spec.js",
