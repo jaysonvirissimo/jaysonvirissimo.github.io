@@ -30,11 +30,14 @@
       "startDate": "2022-05-09",
       "endDate": "2023-02-01",
       "highlights": [
-        "Replaced student inbox RESTful endpoints with GraphQL types and mutations",
-        "Migrated expensive operations out of the monolith into messaging miniservice",
-        "Participated in hackathon project that inspired production feature",
+        "Migrated expensive operations from monolith to messaging miniservice",
+        "Modelled career fair business rules as GraphQL types",
+        "Replaced inbox RESTful endpoints with analogous GraphQL mutations",
+        "Introduced command objects to legacy controller actions to reduce feature rollout risk",
+        "Participated in hackathon project that inspired real production features",
         "Mentored interns and junior developers"
-      ]
+      ],
+      "summary": "Maintained and added features to student and employer inboxes (and associated services)"
     },
     {
       "company": "Tuft & Needle",
@@ -42,14 +45,11 @@
       "startDate": "2021-02-16",
       "endDate": "2022-04-29",
       "highlights": [
-        "Developed coding challenge and associated grading rubrick",
-        "Created succession plan for myself and my direct reports",
         "Helped my direct reports develop career progression plans and learning goals",
         "Lead standups, grooming, planning, and retrospectives",
         "Improved checkout performance and fixed security vulnerabilities",
         "Implemented idempotent charge step to avoid double charges",
         "Designed and implemented shipping address validation result caching",
-        "Introduced new marketing user role and associated authorization logic",
         "Updated register to scrub out-of-stock items from customer carts",
         "Determined team's objectives and key results"
       ],
@@ -61,14 +61,12 @@
       "startDate": "2019-01-01",
       "endDate": "2021-02-15",
       "highlights": [
-        "Collaborated with stakeholders to prioritize feature development and system maintenance",
+        "Helped stakeholders prioritize feature development and system maintenance",
         "Negociated with business for promotions and raises for direct reports",
         "Automated FedEx shipment handling requests",
         "Implemented secure deactivation of user records",
         "Integrated with Textline API and implemented double opt-in flow",
-        "Add custom fraud check rules for Affirm and PayPal payment methods",
-        "Migrate grape endpoints to traditional Rails controllers and eliminate it as a dependency",
-        "Lead initiative to improve documentation of systems within team's domain"
+        "Add custom fraud check rules for Affirm and PayPal payment methods"
       ],
       "summary": "Lead engineering team responsible for customer experience tooling"
     },
@@ -78,16 +76,11 @@
       "startDate": "2015-09-08",
       "endDate": "2018-12-31",
       "highlights": [
-        "Upgraded a ~300 model ~200 controller Rails app from 4.2 to 5.0, 5.1, and then 5.2",
-        "Upgraded Ruby from 2.4 to 2.5, and then 2.6",
-        "Installed and configured system to measure production code usage and identified unused execution paths",
-        "Fixed N + 1 queries in purchase order reporting module",
+        "Upgraded large monolith Rails application from 4.2 -> 5.2 and Ruby from 2.4 -> 2.6",
         "Designed and implemented sales tax service outage fallback system",
         "Discovered and hardened against SQL-injection vulnerabilities in operations portal",
-        "Designed and implemented sale source attribution system",
         "Designed and implemented passwordless POS system authentication",
         "Add DOS attack protection to high throughput grape endpoints",
-        "Installed and configured realtime production performance monitoring",
         "Introduced automated performance testing and reduced product queries 22-fold"
       ],
       "summary": "Built tools for customer experience users and automated product fulfillment flows"
@@ -137,7 +130,6 @@
    ],
    "skills": [
     {
-      "name": "Software development",
       "keywords": [
         "CSS",
         "GraphQL",
@@ -149,16 +141,6 @@
         "Ruby",
         "SQL",
         "TypeScript"
-      ]
-    },
-    {
-      "name": "Management",
-      "keywords": [
-        "Developer mentorship",
-        "External hiring",
-        "Project management",
-        "Roadmap building",
-        "Succession planning"
       ]
     }
   ]
