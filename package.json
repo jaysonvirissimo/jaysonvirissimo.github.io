@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build-html-resume": "echo 'Exporting to HTML...' && cd src/documents && resume export resume.html --format html --theme spartan",
-    "build-pdf-resume": "echo 'Exporting to PDF...' && cd src/documents; resume export resume.pdf --theme ../../node_modules/jsonresume-theme-spartan",
+    "build-pdf-resume": "echo 'Exporting to PDF...' && cd src/documents; resume export resume.pdf --theme ../../node_modules/jsonresume-theme-short",
     "build-resumes": "npm run validate && npm run build-html-resume && npm run build-pdf-resume",
     "deploy": "npm run test && git subtree push --prefix src origin master",
     "preinstall": "npm install -g resume-cli",
@@ -32,6 +32,7 @@
     ]
   },
   "dependencies": {
+    "jsonresume-theme-short": "^0.1.7",
     "jsonresume-theme-spartan": "^0.3.0"
   }
 }
