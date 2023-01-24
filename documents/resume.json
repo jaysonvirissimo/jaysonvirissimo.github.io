@@ -30,12 +30,14 @@
       "startDate": "2022-05-09",
       "endDate": "2023-02-01",
       "highlights": [
+        "Worked with PM and designers to create architectural decision records",
         "Migrated expensive operations from monolith to messaging miniservice",
         "Modelled career fair business rules as GraphQL types",
         "Replaced inbox RESTful endpoints with analogous GraphQL mutations",
         "Introduced command objects to legacy controller actions to reduce feature rollout risk",
         "Participated in hackathon project that inspired real production features",
-        "Mentored interns and junior developers"
+        "Mentored interns and junior developers",
+        "Worked with EM to improve code review practices and code quality metrics"
       ],
       "summary": "Maintained and added features to student and employer inboxes (and associated services)"
     },
@@ -45,10 +47,10 @@
       "startDate": "2021-02-16",
       "endDate": "2022-04-29",
       "highlights": [
+        "Lead standups, grooming, planning, retrospectives, and created architecture documents",
         "Helped my direct reports develop career progression plans and learning goals",
-        "Lead standups, grooming, planning, and retrospectives",
         "Improved checkout performance and fixed security vulnerabilities",
-        "Implemented idempotent charge step to avoid double charges",
+        "Implemented idempotent charge step to avoid double charges improving customer ratings",
         "Designed and implemented shipping address validation result caching",
         "Updated register to scrub out-of-stock items from customer carts",
         "Determined team's objectives and key results"
