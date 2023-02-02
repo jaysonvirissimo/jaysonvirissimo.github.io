@@ -126,16 +126,16 @@
    "skills": [
     {
       "keywords": [
-        "CSS",
-        "GraphQL",
+        "Ruby",
+        "Rails",
+        "SQL",
         "HTML",
         "JavaScript",
-        "Rails",
+        "GraphQL",
         "React",
-        "REST",
-        "Ruby",
-        "SQL",
-        "TypeScript"
+        "TypeScript",
+        "CSS",
+        "REST"
       ]
     }
   ]
