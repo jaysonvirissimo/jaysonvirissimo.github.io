@@ -52,8 +52,8 @@
     },
     {
       "company": "Tuft & Needle",
-      "position": "Engineering Manager, Purchase Experience",
-      "startDate": "2021-02-16",
+      "position": "Engineering Manager",
+      "startDate": "2019-01-01",
       "endDate": "2022-04-29",
       "highlights": [
         "Lead standups, grooming, planning, retrospectives, and created architecture documents",
@@ -62,16 +62,7 @@
         "Implemented idempotent charge step to avoid double charges improving customer ratings",
         "Designed and implemented shipping address validation result caching",
         "Updated register to scrub out-of-stock items from customer carts",
-        "Determined team's objectives and key results"
-      ],
-      "summary": "Lead team responsible for checkout, payments, promotions, and retail POS system"
-    },
-    {
-      "company": "Tuft & Needle",
-      "position": "Engineering Manager, Customer Experience & Retail Experience",
-      "startDate": "2019-01-01",
-      "endDate": "2021-02-15",
-      "highlights": [
+        "Determined team's objectives and key results",
         "Helped stakeholders prioritize feature development and system maintenance",
         "Negociated with business for promotions and raises for direct reports",
         "Automated FedEx shipment handling requests",
@@ -79,7 +70,7 @@
         "Integrated with Textline API and implemented double opt-in flow",
         "Add custom fraud check rules for Affirm and PayPal payment methods"
       ],
-      "summary": "Lead engineering team responsible for customer experience tooling"
+      "summary": "Lead teams responsible for customer experience tooling, checkout, payments, promotions, and the retail POS system"
     },
     {
       "company": "Tuft & Needle",
