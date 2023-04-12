@@ -28,7 +28,10 @@
       "company": "+SUBSCRIBE",
       "position": "Software Engineer",
       "startDate": "2023-02-27",
-      "highlights": []
+      "highlights": [
+        "Resolved user importer performance issues for our largest integration partner by refactoring our team structure and implementing a series of data migrations that safely destroyed tens of millions of unnecessary records"
+      ],
+      "summary": "Maintained and extended critical infrastructure as member of Core Team"
     },
     {
       "company": "Handshake",
