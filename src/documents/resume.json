@@ -29,6 +29,7 @@
       "position": "Software Engineer",
       "startDate": "2023-02-27",
       "highlights": [
+        "Spearheaded the research, design, and development of a Learning Management System, enabling financial advisors to undergo multimedia trainings for investment product access. Integrated real-time data synchronization with external platforms, fortified authentication and authorization mechanisms, and incorporated export features for enhanced usability.",
         "Resolved user importer performance issues for our largest integration partner by refactoring our team structure and implementing a series of data migrations that safely destroyed tens of millions of unnecessary records"
       ],
       "summary": "Maintained and extended critical infrastructure as member of Core Team"
