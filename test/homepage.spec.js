@@ -1,9 +1,9 @@
 const fs = require('fs');
-const jsdom = require('jsdom');
+const { JSDOM } = require('jsdom');
 const { assert } = require('chai');
 
 const sourceMarkup = fs.readFileSync('./src/index.html');
-const mockDocument = jsdom.jsdom(sourceMarkup);
+const mockDocument = new JSDOM(sourceMarkup).window.document;
 
 describe('My professional website', () => {
   describe('header', () => {
@@ -28,7 +28,7 @@ describe('My professional website', () => {
 
     it('should have my title', () => {
       const p = header.querySelector('p');
-      assert(p.textContent.trim(), 'Full-Stack Developer')
+      assert(p.textContent.trim(), 'Staff Software Engineer')
     });
   });
 

@@ -3,10 +3,9 @@
     "name": "Jayson Virissimo",
     "label": "Senior Software Engineer",
     "email": "jayson.virissimo@asu.edu",
-    "phone": "(602) 561-8485",
     "website": "http://virissimo.info/",
     "location": {
-      "city": "Phoenix",
+      "city": "Prescott Valley",
       "countryCode": "US",
       "region": "Arizona"
     },
@@ -25,16 +24,22 @@
   },
   "work": [
     {
-      "company": "+SUBSCRIBE",
-      "position": "Software Engineer",
+      "company": "SUBSCRIBE",
+      "position": "Staff Software Engineer",
       "startDate": "2023-02-27",
       "highlights": [
+        "Architected and led the technical implementation of a mission-critical integration with one of the nation's largest independent broker-dealers, enabling alternative investment access through automatic account imports, hierarchical team management, and real-time licensing/training verification — the system has processed hundreds of thousands of accounts and serves over a thousand active users",
+        "Matured that first broker-dealer integration into stable infrastructure by strengthening data validation, resolving race conditions in account and team creation, retiring 30+ feature toggles, and refactoring modules for long-term maintainability",
+        "Owned a second integration end-to-end with a major full-service wealth management firm, from requirements discovery through implementation, designing a configuration-driven import pipeline intentionally generalized so future integrations can onboard with minimal custom code",
+        "Represented the company in technical discussions with engineers and managers at both partner broker-dealers, translating complex architectural and regulatory constraints into actionable decisions for both technical and non-technical stakeholders",
+        "Onboarded and mentored an engineer to independently own the first broker-dealer integration's development and support, enabling a clean handoff and sustained operational continuity",
         "Spearheaded the research, design, and development of a Learning Management System, enabling financial advisors to undergo multimedia trainings for investment product access. Integrated real-time data synchronization with external platforms, fortified authentication and authorization mechanisms, and incorporated export features for enhanced usability",
         "Resolved user importer performance issues for our largest integration partner by refactoring our team structure and implementing a series of data migrations that safely destroyed tens of millions of unnecessary records",
+        "Resolved production incidents beyond core responsibilities, including terminating database-locking queries blocking deployments, fixing unsafe migrations, and investigating SSO-related errors across integrations",
         "Decreased CI runtime by ~5 minutes by profiling Argo workflow steps and resizing test suite chunks to maximize the benefit of parallelism",
         "Interviewed software engineer candidates"
       ],
-      "summary": "Maintained and extended critical infrastructure as member of Core Team"
+      "summary": "Owned end-to-end delivery of broker-dealer integrations and maintained critical infrastructure as member of Core Team"
     },
     {
       "company": "Handshake",
@@ -120,6 +125,18 @@
       "area": "Fundamentals of Alternative Investments",
       "studyType": "Certificate",
       "endDate": "2023-08-08"
+    },
+    {
+      "institution": "FINRA",
+      "area": "Securities Industry Essentials",
+      "studyType": "Exam",
+      "endDate": "2025-01-09"
+    },
+    {
+      "institution": "Apollo GraphQL",
+      "area": "Graph Developer",
+      "studyType": "Associate Certification",
+      "endDate": "2025-09-07"
     }
   ],
   "languages": [
