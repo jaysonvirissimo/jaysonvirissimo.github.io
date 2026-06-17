@@ -2,18 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://unpkg.com/nes.css@2.1.0/css/nes.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="stylesheets/main.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <title>Jayson Virissimo</title>
+
+  <meta name="description" content="Jayson Virissimo — Staff Software Engineer building fintech and spaced-repetition learning tools. Résumé and portfolio.">
+  <meta name="author" content="Jayson Virissimo">
+  <link rel="canonical" href="https://virissimo.info/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://virissimo.info/">
+  <meta property="og:title" content="Jayson Virissimo — Staff Software Engineer">
+  <meta property="og:description" content="Staff Software Engineer building fintech and spaced-repetition learning tools. Résumé and portfolio.">
+  <meta property="og:image" content="https://virissimo.info/images/me.png">
+  <meta property="og:image:alt" content="Jayson Virissimo">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jayson Virissimo — Staff Software Engineer">
+  <meta name="twitter:description" content="Staff Software Engineer building fintech and spaced-repetition learning tools. Résumé and portfolio.">
+  <meta name="twitter:image" content="https://virissimo.info/images/me.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jayson Virissimo",
+    "jobTitle": "Staff Software Engineer",
+    "url": "https://virissimo.info/",
+    "image": "https://virissimo.info/images/me.png",
+    "sameAs": [
+      "https://github.com/jaysonvirissimo",
+      "https://www.linkedin.com/in/jaysonvirissimo"
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
     <h1><i class="snes-logo brand"></i>Jayson Virissimo</h1>
     <p>Staff Software Engineer</p>
   </header>
+
+  <section id="about" class="nes-container with-title">
+    <h2 class="title">About</h2>
+    <div id="bio">
+      <img src="images/me.png" alt="Jayson Virissimo" class="bio-photo">
+      <p>
+        Jayson Virissimo is a Staff Software Engineer at SUBSCRIBE, where he's helping build the operating system for the alternative investments industry. 
+        He works primarily in Ruby on Rails, with TypeScript, React, and GraphQL across the stack. 
+        Outside of work he builds learning tools grounded in spaced repetition — most recently Altkata, a native iOS and macOS app. 
+        He lives in Arizona.
+      </p>
+    </div>
+  </section>
 
   <section id="resume" class="nes-container with-title">
     <h2 class="title">Résumé</h2>
@@ -26,35 +72,70 @@
 
   <section id="portfolio" class="nes-container with-title">
     <h2 class="title">Portfolio</h2>
+      <div class="project featured nes-container is-dark with-title">
+        <h3 class="title">Altkata</h3>
+        <!-- App Store screenshot: drop into src/images/ and add an <img> here -->
+        <p class="description">A native iOS and macOS app for learning alternative investments through spaced repetition (FSRS): 1,478 exercises across 50 topics, with instant answer verification, hands-free audio review, and a local-first, privacy-respecting design.</p>
+        <p class="tags">
+          <span class="tag">iOS</span>
+          <span class="tag">macOS</span>
+          <span class="tag">Spaced Repetition</span>
+        </p>
+        <p>
+          <a class="nes-btn is-primary" href="https://altkata.app/" role="button">Website</a>
+          <a class="nes-btn is-success" href="https://apps.apple.com/us/app/altkata/id6767114611" role="button">App Store</a>
+        </p>
+      </div>
       <div id="projects">
         <div class="project nes-container is-dark with-title">
-          <h3 class="title">Boethius</h3>
-          <p class="description">A web application for learning the classical liberal arts, including (Latin) grammar, arithmetic, geometry, and astronomy.</p>
-          <p></p>
-        </div>
-        <div class="project nes-container is-dark with-title">
-          <h3 class="title">Syllogism</h3>
-          <p class="description">
-            A Ruby library to check if individual statements are well-formed formulas in Aristotelian logic and whether whole arguments are valid or are of the same logical form.
+          <h3 class="title">Practice Thy Algorithms</h3>
+          <p class="description">A browser-based platform for practicing 22 classic algorithm problems by making the tests pass in JavaScript, Python, or Ruby — running Ruby and Python entirely client-side via WebAssembly (ruby.wasm and Pyodide).</p>
+          <p class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">WebAssembly</span>
+            <span class="tag">Vite</span>
           </p>
           <p>
-            <a class="nes-btn" href="https://github.com/jaysonvirissimo/syllogism" role="button">Source Code</a>
-            <a class="nes-btn is-error" href="https://rubygems.org/gems/syllogism" role="button">RubyGems</a>
+            <a class="nes-btn" href="https://github.com/jaysonvirissimo/practice-thy-algorithms" role="button">Source Code</a>
+            <a class="nes-btn is-primary" href="https://jaysonvirissimo.github.io/practice-thy-algorithms/" role="button">Live Demo</a>
           </p>
         </div>
         <div class="project nes-container is-dark with-title">
-          <h3 class="title">MemorizeOnline</h3>
-          <p class="description">A web application for learning the epic poem of the Portuguese people using spaced-repetition principles.</p>
+          <h3 class="title">Build Your Own ALU</h3>
+          <p class="description">An interactive tool for building digital logic from NAND gates up to a complete Arithmetic Logic Unit, following the Nand2Tetris curriculum. Write real HDL in the browser with live verification, SVG circuit diagrams, and progressive hints.</p>
+          <p class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Vite</span>
+            <span class="tag">CodeMirror</span>
+          </p>
           <p>
-            <a class="nes-btn" href="https://github.com/jaysonvirissimo/os-lusiadas" role="button">Source Code</a>
-            <a class="nes-btn is-primary" href="https://memorize.online/" role="button">Live Demo</a>
+            <a class="nes-btn" href="https://github.com/jaysonvirissimo/build-your-own-alu" role="button">Source Code</a>
+            <a class="nes-btn is-primary" href="https://jaysonvirissimo.github.io/build-your-own-alu/" role="button">Live Demo</a>
           </p>
         </div>
         <div class="project nes-container is-dark with-title">
-          <h3 class="title">WeightedList</h3>
-          <p class="description">A Ruby library that lets you sample (without replacement) from and shuffle an (enumerable) weighted list.</p>
+          <h3 class="title">ActiveRecall</h3>
+          <p class="description">A Ruby gem that turns your ActiveRecord models into smart flashcards. Add <code>has_deck</code> to a model and get spaced-repetition scheduling — from the classic Leitner system to the modern FSRS algorithm.</p>
+          <p class="tags">
+            <span class="tag">Ruby</span>
+            <span class="tag">Rails</span>
+            <span class="tag">FSRS</span>
+          </p>
           <p>
-            <a class="nes-btn" href="https://github.com/jaysonvirissimo/weighted_list" role="button">Source Code</a> <a class="nes-btn is-error" href="https://rubygems.org/gems/weighted_list" role="button">RubyGems</a>
+            <a class="nes-btn" href="https://github.com/jaysonvirissimo/active_recall" role="button">Source Code</a>
+            <a class="nes-btn is-error" href="https://rubygems.org/gems/active_recall" role="button">RubyGems</a>
+          </p>
+        </div>
+        <div class="project nes-container is-dark with-title">
+          <h3 class="title">MedievalLatina</h3>
+          <p class="description">A Ruby gem that converts Latin text into phonetic spellings and IPA lexicons so text-to-speech engines (like AWS Polly) can authentically pronounce medieval Latin.</p>
+          <p class="tags">
+            <span class="tag">Ruby</span>
+            <span class="tag">Text-to-Speech</span>
+          </p>
+          <p>
+            <a class="nes-btn" href="https://github.com/jaysonvirissimo/medieval_latina" role="button">Source Code</a>
+            <a class="nes-btn is-error" href="https://rubygems.org/gems/medieval_latina" role="button">RubyGems</a>
           </p>
         </div>
       </div>
