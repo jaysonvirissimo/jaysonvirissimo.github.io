@@ -1,7 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0 2rem;
   margin: 2rem;
   font-family: 'Press Start 2P', cursive;
+  font-size: clamp(0.5rem, 2.8vw, 1rem);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.nes-container,
+.description {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 footer {
@@ -48,9 +63,31 @@ i.brand {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 0 0.5rem;
+    margin: 0.75rem;
+  }
+
   #bio {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .nes-container {
+    padding: 1rem;
+  }
+
+  .nes-container.with-title {
+    padding-top: 1.5rem;
+  }
+
+  .project.featured {
+    outline-offset: 2px;
+  }
+
+  .project .nes-btn {
+    display: inline-block;
+    margin-bottom: 0.5rem;
   }
 }
