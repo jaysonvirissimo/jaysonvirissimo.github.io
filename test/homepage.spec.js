@@ -52,7 +52,50 @@ describe('My professional website', () => {
     });
   });
 
-  // TODO: Add biography
+  describe('about section', () => {
+    let about;
+
+    beforeEach(() => about = mockDocument.querySelector('#about'));
+
+    it('should exist', () => {
+      assert.isOk(about);
+    });
+
+    it('should contain a title', () => {
+      const h2 = about.querySelector('h2');
+      assert(h2.textContent.trim().toLowerCase() === 'about');
+    });
+
+    it('should contain a biography', () => {
+      const p = about.querySelector('#bio p');
+      assert(p);
+      assert(p.textContent.trim() !== '');
+    });
+
+    it('should contain a photo with alt text', () => {
+      const img = about.querySelector('img.bio-photo');
+      assert(img);
+      assert(img.getAttribute('alt').trim() !== '');
+    });
+  });
+
+  describe('social metadata', () => {
+    it('should have a meta description', () => {
+      const meta = mockDocument.querySelector('meta[name="description"]');
+      assert(meta);
+      assert(meta.getAttribute('content').trim() !== '');
+    });
+
+    it('should have an Open Graph title and image', () => {
+      assert(mockDocument.querySelector('meta[property="og:title"]'));
+      assert(mockDocument.querySelector('meta[property="og:image"]'));
+    });
+
+    it('should have a canonical link', () => {
+      assert(mockDocument.querySelector('link[rel="canonical"]'));
+    });
+  });
+
   describe('portfolio section', () => {
     let portfolio;
 
