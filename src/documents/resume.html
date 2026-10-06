@@ -1,890 +1,163 @@
-<!doctype html>
-<html>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<title>Jayson Virissimo</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
-	<style>
-		/********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jayson Virissimo – Staff Software Engineer</title>
+<style>
+:root {
+  --ink: #111;
+  --muted: #444;
+  --rule: #999;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Custom reset */
-.main-summary p,
-#publications .item,
-#skills .item,
-#languages .item,
-#references .item,
-#interests .item{
-	margin: 0;
-}
-
-
-/****************
-*		SMARTPHONES
-****************/
-em {
-	color: #757575;
-}
-p {
-	margin: 1em 0;
-}
-blockquote {
-	margin: 0;
-	margin-bottom: 1em;
-}
-strong {
-	font-weight: 700;
-	font-size: 1.1em;
-}
-ul {
-	margin-top: 1em;
-}
-div.item {
-	margin: 1em 0 2em;
-	padding-bottom: 2em;
-}
-div.item:last-of-type {
-	margin: 0;
-	border-bottom: none;
-	padding-bottom: 0;
-}
-p {
-	text-align: justify;
-}
-
-
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
-}
-h1 {
-	font-size: 2.5rem;
-}
-h2,
-h3 {
-	font-size: 1rem;
-}
-a {
-	color: #EB5F51;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-
-/* Layout */
-body {
-	background: #f2f2f2;
-	line-height: 1.6;
-	font-size: 13px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#resume {
-	padding: 1rem 0;
-	margin: 1rem auto;
-}
-
-#header {
-	padding: 0 1em;
-	margin-bottom: 1em;
-}
-
-#resume > header div {
-	display: table;
-	padding-left: 0.5em;
-}
-
-#resume > header div.middle {
-	padding-top: 1.5em;
-}
-
-header img {
-	display: block;
-	width: 10em;
-	border-radius: 0.275em;
-	float: right;
-}
-
-header .name {
-	line-height: 1;
-}
-
-header .label {
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: #757575;
-}
-
-section:not(.section) {
-	padding: .5em 1rem;
-}
-
-section#references {
-	border-bottom:none;
-}
-
-section#basics {
-	background: inherit;
-	margin-bottom: 0;
-}
-
-section#skills {
-	padding-bottom: 0;
-}
-
-section#education,
-section#work,
-.main-summary section {
-	padding-bottom: 1em;
-}
-
-header::after {
-	display: table;
-	content: " ";
-	clear: both;
-}
-
-h2.section-title {
-	text-align: left;
-	font-size: 1rem;
-	font-weight: 400;
-	color: #757575;
-	padding: 1em 1rem 0;
-	margin-bottom: 0.1275em;
-}
-
-.date {
-	font-weight: 700;
-	color: #757575;
-}
-
-.position, .area, .institution {
-	font-weight: 700;
-}
-
-#interests .item, #languages .item {
-	padding: 0 1em 1em 0;
-	border-bottom: none;
-}
-
-.website::before {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-decoration: none;
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-	content: '\f14c';
-}
-
-#profiles, #skills, #interests, #languages {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	-webkit-justify-content: flex-start;
-	justify-content: flex-start;
-  padding-bottom: 1em;
-}
-
-#profiles, #location {
-	box-shadow: none;
-	padding: 0;
-}
-
-#profiles .item {
-	margin: 0;
-	padding: 0;
-	padding-right: 1em;
-	border-bottom: none;
-}
-
-#interests ul {
-	margin-top: 0.5em;
-}
-
-#publications .name {
-	font-style: italic;
-}
-
-.courses li, .keywords li{
-	display: inline-block;
-	background: #f0f0f0;
-	font-size: 0.9em;
-	line-height: 1;
-	color: #333;
-	padding: 0.4em 0.8em;
-	border-bottom: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-radius: 3px;
-}
-
-#publications .date {
-	font-weight: normal;
-	color: #000;
-}
-
-#skills .item {
-	min-width: 15em;
-	padding: 0 .5em .8em 0;
-	border-bottom: none;
-}
-
-
-/* Skills chart */
-#skills .level .bar {
-	border: 1px solid #ddd;
-	display: block;
-	width: 10em;
-	height: 5px;
-	margin: 0em 0 1em 0;
-	position: relative;
-}
-
-#skills .level .bar::after {
-	position: absolute;
-	content: " ";
-	top: 0;
-	left: 0;
-	background: black;
-	height: 5px;
-}
-
-#skills .level.beginner .bar::after {
-	background: #EB5F51;
-	width: 2.5em;
-}
-
-#skills .level.intermediate .bar::after {
-	background: #ffdf1f;
-	width: 5em;
-}
-
-#skills .level.advanced .bar::after {
-	background: #59C596;
-	width: 7.5em;
-}
-
-#skills .level.master .bar::after {
-	background: #5CB85C;
-	width: 10em;
-}
-
-#references .item {
-	padding-left: 1em;
-	border-left: 5px solid #EB5F51;
-}
-
-.fa.social {
-	margin-right: 0.25em;
-	font-size: 1.1em;
-}
-
-/* Social Media Brand Colors */
-.google-plus {
-	color: #dd4b39;
-}
-
-.tumblr {
-	color:#32506d;
-}
-
-.foursquare {
-	color:  #0072b1;
-}
-
-.facebook {
-	color: #3b5998;
-}
-
-.linkedin {
-	color: #007bb6;
-}
-
-.pinterest {
-	color: #cb2027;
-}
-
-.dribbble {
-	color: #ea4c89;
-}
-
-.instagram {
-	color: #517fa4;
-}
-
-.twitter {
-	color: #00aced;
-}
-
-.soundcloud {
-	color: #ff3a00;
-}
-
-.wordpress {
-	color: #21759b;
-}
-
-.youtube {
-	color: #bb0000;
-}
-
-.github {
-	color: #171515;
-}
-
-.stack-overflow {
-	color: #828386;
-	position: relative;
-}
-
-.flickr {
-	color: #ff0084;
-}
-
-.stack-overflow::after {
-	position: absolute;
-	left: 0;
-	content: '\f16c';
-	color: #f68a1f;
-	overflow: hidden;
-	height: 40%;
-}
-
-/******************
-*		HELPER CLASSES
-******************/
-.fa {
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-}
-
-.clear {
-	display: table;
-	clear: both;
-}
-
-
-/****************
-*		TABLET
-****************/
-@media screen and (min-width: 602px) {
-
-	#resume {
-		width: 550px;
-		margin: 0 auto;
-	}
-	section > header > h3 {
-		float:left;
-	}
-	section > header > .date {
-		float: right;
-		line-height: 1.3;
-	}
-
-}
-
-
-/****************
-*		LAPTOP
-****************/
-@media screen and (min-width: 1025px) {
-
-	#resume {
-		width: 650px;
-		padding: 3em;
-		margin: 3em auto;
-		background: #fff;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-	}
-
-	.section {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
-		-webkit-justify-content: space-between;
-		justify-content: space-between;
-		margin-bottom: 1em;
-		margin-top: 1em;
-		border-bottom: 1px solid #eee;
-	}
-
-	.section:last-of-type {
-		border-bottom: none;
-		margin-bottom: 0;
-	}
-
-	section > header {
-		line-height: 1;
-		padding-bottom: 1em;
-	}
-
-	h2.section-title {
-		line-height: 1.1;
-		padding-top: 0;
-	}
-
-	section:not(.section) {
-		width: 34.5em;
-		padding: 0 1em 1em 0;
-		margin-top:0;
-		border: none;
-	}
-
-	section p {
-		margin: 0;
-	}
-
-	section#basics {
-		width: auto;
-		padding-top: 1em;
-		padding-left: 1em;
-		padding-bottom: 0;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
-	}
-
-	#profiles .item{
-		padding-bottom: 1em;
-	}
-
-	div {
-		padding: 0;
-	}
-
-	#skills .item {
-		padding-left:0;
-		margin-top: 0;
-	}
-
-	div.item {
-		margin-top: 0;
-		border-bottom: 1px solid #eee;
-	}
-
-}
-
-	</style>
-
-
-	<body>
-		<div id="resume">
-				<header id="header">
-						<div>
-							<h1 class="name">Jayson Virissimo</h1>
-							<h2 class="label">Senior Software Engineer</h2>
-						</div>
-
-				</header>
-
-				<section id="basics">
-
-						<div id="location">
-							<span class="city">
-								Prescott Valley
-							</span>
-							<span class="countryCode">
-								(US),
-							</span>
-							<span class="region">
-								Arizona
-							</span>
-						</div>
-
-					<div id="contact">
-						<div class="website">
-							<a href="http://virissimo.info/">http://virissimo.info/</a>
-						</div>
-						<div class="email">
-							<span class="fa fa-envelope"></span>
-							<a href="mailto:jayson.virissimo@asu.edu">jayson.virissimo@asu.edu</a>
-						</div>
-					</div>
-
-
-					<div id="profiles">
-						<div class="item">
-							<span class="network fa fa-github github"></span>
-							<span class="username">
-								<span class="url">
-									<a href="https://github.com/jaysonvirissimo">jaysonvirissimo</a>
-								</span>
-							</span>
-						</div>
-						<div class="item">
-							<span class="network fa fa-linkedin linkedin"></span>
-							<span class="username">
-								<span class="url">
-									<a href="https://www.linkedin.com/in/jaysonvirissimo">jaysonvirissimo</a>
-								</span>
-							</span>
-						</div>
-					</div>
-				</section>
-
-				</section>
-
-				</section>
-
-				<section class="section">
-					<h2 class='section-title'>Experience</h2>
-					<section id="work">
-						<header>
-							<h3 class="name">
-								SUBSCRIBE
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									February 2023
-								</span>
-								<span class="endDate">
-									- Present
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Staff Software Engineer
-						</div>
-						<div class="summary">
-							<p>Owned end-to-end delivery of broker-dealer integrations and maintained critical infrastructure as member of Core Team</p>
-						</div>
-						<ul class="highlights">
-							<li>Architected and led the technical implementation of a mission-critical integration with one of the nation&#x27;s largest independent broker-dealers, enabling alternative investment access through automatic account imports, hierarchical team management, and real-time licensing/training verification — the system has processed hundreds of thousands of accounts and serves over a thousand active users</li>
-							<li>Matured that first broker-dealer integration into stable infrastructure by strengthening data validation, resolving race conditions in account and team creation, retiring 30+ feature toggles, and refactoring modules for long-term maintainability</li>
-							<li>Owned a second integration end-to-end with a major full-service wealth management firm, from requirements discovery through implementation, designing a configuration-driven import pipeline intentionally generalized so future integrations can onboard with minimal custom code</li>
-							<li>Represented the company in technical discussions with engineers and managers at both partner broker-dealers, translating complex architectural and regulatory constraints into actionable decisions for both technical and non-technical stakeholders</li>
-							<li>Onboarded and mentored an engineer to independently own the first broker-dealer integration&#x27;s development and support, enabling a clean handoff and sustained operational continuity</li>
-							<li>Spearheaded the research, design, and development of a Learning Management System, enabling financial advisors to undergo multimedia trainings for investment product access. Integrated real-time data synchronization with external platforms, fortified authentication and authorization mechanisms, and incorporated export features for enhanced usability</li>
-							<li>Resolved user importer performance issues for our largest integration partner by refactoring our team structure and implementing a series of data migrations that safely destroyed tens of millions of unnecessary records</li>
-							<li>Resolved production incidents beyond core responsibilities, including terminating database-locking queries blocking deployments, fixing unsafe migrations, and investigating SSO-related errors across integrations</li>
-							<li>Decreased CI runtime by ~5 minutes by profiling Argo workflow steps and resizing test suite chunks to maximize the benefit of parallelism</li>
-							<li>Interviewed software engineer candidates</li>
-						</ul>
-					</div>
-						<header>
-							<h3 class="name">
-								Handshake
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									May 2022
-								</span>
-								<span class="endDate">
-									- February 2023
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Senior Software Engineer
-						</div>
-						<div class="summary">
-							<p>Maintained and added features to student and employer inboxes (and associated services)</p>
-						</div>
-						<ul class="highlights">
-							<li>Worked with PM and designers to create architectural decision records</li>
-							<li>Migrated expensive operations from monolith to messaging miniservice</li>
-							<li>Modelled career fair business rules as GraphQL types</li>
-							<li>Replaced inbox RESTful endpoints with analogous GraphQL mutations</li>
-							<li>Introduced command objects to legacy controller actions to reduce feature rollout risk</li>
-							<li>Participated in hackathon project that inspired real production features</li>
-							<li>Mentored interns and junior developers</li>
-							<li>Worked with EM to improve code review practices and code quality metrics</li>
-						</ul>
-					</div>
-						<header>
-							<h3 class="name">
-								Tuft &amp; Needle
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									January 2019
-								</span>
-								<span class="endDate">
-									- April 2022
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Engineering Manager
-						</div>
-						<div class="summary">
-							<p>Lead teams responsible for customer experience tooling, checkout, payments, promotions, and the retail POS system</p>
-						</div>
-						<ul class="highlights">
-							<li>Lead standups, grooming, planning, retrospectives, and created architecture documents</li>
-							<li>Helped my direct reports develop career progression plans and learning goals</li>
-							<li>Improved checkout performance and fixed security vulnerabilities</li>
-							<li>Implemented idempotent charge step to avoid double charges improving customer ratings</li>
-							<li>Designed and implemented shipping address validation result caching</li>
-							<li>Updated register to scrub out-of-stock items from customer carts</li>
-							<li>Determined team&#x27;s objectives and key results</li>
-							<li>Helped stakeholders prioritize feature development and system maintenance</li>
-							<li>Negociated with business for promotions and raises for direct reports</li>
-							<li>Automated FedEx shipment handling requests</li>
-							<li>Implemented secure deactivation of user records</li>
-							<li>Integrated with Textline API and implemented double opt-in flow</li>
-							<li>Add custom fraud check rules for Affirm and PayPal payment methods</li>
-						</ul>
-					</div>
-						<header>
-							<h3 class="name">
-								Tuft &amp; Needle
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									September 2015
-								</span>
-								<span class="endDate">
-									- December 2018
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Software Engineer
-						</div>
-						<div class="summary">
-							<p>Built tools for customer experience users and automated product fulfillment flows</p>
-						</div>
-						<ul class="highlights">
-							<li>Upgraded large monolith Rails application from 4.2 -&gt; 5.2 and Ruby from 2.4 -&gt; 2.6</li>
-							<li>Designed and implemented sales tax service outage fallback system</li>
-							<li>Discovered and hardened against SQL-injection vulnerabilities in operations portal</li>
-							<li>Designed and implemented passwordless POS system authentication</li>
-							<li>Add DOS attack protection to high throughput grape endpoints</li>
-							<li>Introduced automated performance testing and reduced product queries 22-fold</li>
-						</ul>
-					</div>
-						<header>
-							<h3 class="name">
-								JetPack Enterprises
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									February 2015
-								</span>
-								<span class="endDate">
-									- August 2015
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Web Developer
-						</div>
-						<div class="summary">
-							<p>Repaired, refactored, and added features to legacy software projects</p>
-						</div>
-					</div>
-						<header>
-							<h3 class="name">
-								Bloom &amp; Speak Bilingual Tx
-							</h3>
-							<div class="date">
-								<span class="startDate">
-									January 2012
-								</span>
-								<span class="endDate">
-									- September 2017
-								</span>
-							</div>
-						</header>
-						<div class="item">
-						<div class="position">
-							Co-founder
-						</div>
-					</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<h2 class='section-title'>Education</h2>
-					<section id="education">
-							<header>
-									<h3 class="institution">
-										Arizona State University
-									</h3>
-								<div class="date">
-									<span class="startDate">
-										2005
-									</span>
-									<span class="endDate">
-										- 2009
-									</span>
-								</div>
-							</header>
-							<div class="item">
-									<div class="studyType">
-										Bachelor of Science
-									</div>
-									<div class="area">
-										Political Science
-									</div>
-							</div>
-							<header>
-									<h3 class="institution">
-										Chartered Alternative Investment Analyst Association
-									</h3>
-								<div class="date">
-									<span class="endDate">
-										- 2023
-									</span>
-								</div>
-							</header>
-							<div class="item">
-									<div class="studyType">
-										Certificate
-									</div>
-									<div class="area">
-										Fundamentals of Alternative Investments
-									</div>
-							</div>
-							<header>
-									<h3 class="institution">
-										FINRA
-									</h3>
-								<div class="date">
-									<span class="endDate">
-										- 2025
-									</span>
-								</div>
-							</header>
-							<div class="item">
-									<div class="studyType">
-										Exam
-									</div>
-									<div class="area">
-										Securities Industry Essentials
-									</div>
-							</div>
-							<header>
-									<h3 class="institution">
-										Apollo GraphQL
-									</h3>
-								<div class="date">
-									<span class="endDate">
-										- 2025
-									</span>
-								</div>
-							</header>
-							<div class="item">
-									<div class="studyType">
-										Associate Certification
-									</div>
-									<div class="area">
-										Graph Developer
-									</div>
-							</div>
-					</section>
-				</section>
-
-
-
-
-
-				<section class="section">
-					<h2 class='section-title'>Skills</h2>
-					<section id="skills">
-						<div class="item">
-							<ul class="keywords">
-								<li>Ruby</li>
-								<li>Rails</li>
-								<li>SQL</li>
-								<li>HTML</li>
-								<li>JavaScript</li>
-								<li>GraphQL</li>
-								<li>React</li>
-								<li>TypeScript</li>
-								<li>CSS</li>
-								<li>REST</li>
-							</ul>
-						</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<h2 class='section-title'>Languages</h2>
-					<section id="languages">
-						<div class="item">
-							<div class="language">
-								English
-							</div>
-							<div class="fluency">
-								<em>Native speaker</em>
-							</div>
-						</div>
-						<div class="item">
-							<div class="language">
-								Portuguese
-							</div>
-							<div class="fluency">
-								<em>A2 (Certificado inicial de português língua estrangeira)</em>
-							</div>
-						</div>
-					</section>
-				</section>
-
-
-		</div>
-	</body>
-
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.25;
+  color: var(--ink);
+  background: #fff;
+}
+
+main {
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.5in 0.6in;
+}
+
+@media screen {
+  body { background: #e9e9e9; }
+  main { background: #fff; margin: 1rem auto; box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+}
+
+@page { size: Letter; margin: 0.5in 0.6in; }
+
+@media print {
+  body { background: #fff; }
+  main { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+}
+
+h1 { font-size: 18pt; margin: 0; letter-spacing: 0.02em; }
+.label { font-size: 11.5pt; font-weight: 600; color: var(--muted); margin: 1pt 0 2pt; }
+.contact { margin: 0; font-size: 9pt; color: var(--muted); }
+.sep { color: var(--rule); }
+
+h2 {
+  font-size: 10.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--rule);
+  margin: 7pt 0 3pt;
+  padding-bottom: 1pt;
+  break-after: avoid;
+}
+
+p { margin: 0 0 3pt; }
+a { color: inherit; text-decoration: none; }
+ul { margin: 2pt 0 0; padding-left: 14pt; }
+li { margin: 0 0 2pt; break-inside: avoid; }
+
+.entry { margin-bottom: 4pt; }
+.entry-head { display: flex; justify-content: space-between; gap: 8pt; break-after: avoid; }
+.entry-dates { white-space: nowrap; color: var(--muted); }
+.entry-summary { color: var(--muted); margin: 1pt 0; }
+.compact { break-inside: avoid; margin-bottom: 2pt; }
+.project, .certificate { break-inside: avoid; }
+
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Jayson Virissimo</h1>
+<p class="label">Staff Software Engineer</p>
+<p class="contact">Prescott Valley, AZ<span class="sep"> · </span>Remote<span class="sep"> · </span><a href="mailto:jayson.virissimo@asu.edu">jayson.virissimo@asu.edu</a></p>
+<p class="contact"><a href="https://virissimo.info/">virissimo.info</a><span class="sep"> · </span><a href="https://github.com/jaysonvirissimo">github.com/jaysonvirissimo</a><span class="sep"> · </span><a href="https://www.linkedin.com/in/jaysonvirissimo">linkedin.com/in/jaysonvirissimo</a></p>
+</header>
+<section>
+<h2>Summary</h2>
+<p>Staff software engineer with 11 years in Ruby on Rails, nearly four of them on a regulated alternative-investments platform, owning partner integrations end to end: architecture, compliance rules, data pipelines, incident response, and the partner relationship. Former engineering manager for checkout and payments. Builds the boring, correct parts of financial software: idempotent pipelines, advisory locks and database constraints, authenticated webhooks, and test-first pull requests (600+ merged since 2023).</p>
+</section>
+<section>
+<h2>Skills</h2>
+<p class="skills"><strong>Languages &amp; frameworks:</strong> Ruby, Ruby on Rails, SQL, GraphQL, TypeScript, React, JavaScript, Swift</p>
+<p class="skills"><strong>Data &amp; infrastructure:</strong> PostgreSQL, Redis, Sidekiq, AWS, Kubernetes, Argo Workflows, Docker, Sentry</p>
+<p class="skills"><strong>Security &amp; auth:</strong> SAML SSO, OAuth 2.0, JWT, HMAC webhook verification, multi-tenant authorization, rate limiting, secrets rotation</p>
+<p class="skills"><strong>Fintech domain:</strong> broker-dealer integrations, FINRA licensing rules, AML/KYC onboarding, pre-trade compliance checks, idempotent payment flows, Stripe, Affirm, PayPal</p>
+<p class="skills"><strong>Practices:</strong> test-first development (RSpec), architecture decision records, incident response, AI-assisted engineering, mentoring</p>
+</section>
+<section>
+<h2>Experience</h2>
+<article class="entry">
+<div class="entry-head"><span class="entry-title"><strong>Staff Software Engineer</strong>, SUBSCRIBE</span><span class="entry-dates">Feb 2023 – Present</span></div>
+<p class="entry-summary">Engineer on a regulated platform for private-fund subscriptions, orders, and compliance (Ruby on Rails and React on AWS). Hired as Senior, promoted to Staff.</p>
+<ul>
+<li>Sole engineer and technical owner of the flagship integration with one of the largest US independent broker-dealers, from requirements and API design through launch and support: automated account and team imports, hierarchical advisor teams, and real-time licensing and training checks.</li>
+<li>Owned a second partner integration end to end, from requirements through launch, on a configuration-driven import pipeline built so later partners onboard with minimal custom code.</li>
+<li>Built pre-trade compliance checks that gate order entry on advisor registration and licensing, completed product training, and product concentration limits, covering tens of thousands of advisors across organizations.</li>
+<li>Hardened concurrency handling and data integrity across the integrations with advisory locks, unique background jobs, database unique constraints, idempotent migrations, and retries with backoff; fixed race conditions in account, team, and contact creation.</li>
+<li>Strengthened tenant isolation and organization-scoped authorization across the integrations; delivered HMAC-authenticated webhooks with constant-time verification, support for multiple SAML identity providers, and OAuth token caching.</li>
+<li>Led research, design, and delivery of an advisor training platform (React and Rails) that gates investment-product access on completed training.</li>
+<li>Owned incident response for the integration surface, from alert triage through mitigation, root-cause fixes, and coordination with partner engineers.</li>
+<li>Primary technical contact for partner firms: ran requirements and design sessions with their engineers and managers, and proposed API shapes the broker-dealer adopted.</li>
+<li>Ran zero-downtime data migrations that removed redundant association records and restructured team associations; profiled and optimized the nightly import jobs, cutting query counts by a third to two-thirds per job in profiling against production-shaped data.</li>
+<li>Onboarded and mentored the engineer who now owns the flagship integration, enabling a clean handoff; interviewed engineering candidates.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><span class="entry-title"><strong>Senior Software Engineer</strong>, Handshake</span><span class="entry-dates">May 2022 – Feb 2023</span></div>
+<p class="entry-summary">Senior engineer on the messaging team of a student career platform (Rails, GraphQL, React).</p>
+<ul>
+<li>Wrote architecture decision records with product managers and designers before building.</li>
+<li>Replaced the student and employer inbox&#39;s REST endpoints with GraphQL mutations.</li>
+<li>Moved expensive inbox operations out of the monolith into a messaging service.</li>
+<li>Introduced command objects in legacy controller actions to reduce feature rollout risk.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><span class="entry-title"><strong>Engineering Manager</strong>, Tuft &amp; Needle</span><span class="entry-dates">Jan 2019 – Apr 2022</span></div>
+<p class="entry-summary">Managed a team of up to five engineers and four contractors that owned checkout, payments (Stripe, Affirm, PayPal), promotions, customer-experience tooling, and the retail point-of-sale system for a direct-to-consumer mattress brand, while staying hands-on in the Rails monolith.</p>
+<ul>
+<li>Prevented double charges by making payment capture transactional with order creation, holding a pessimistic lock until capture, and centralizing idempotency-key generation outside the Stripe gateway.</li>
+<li>Extended fraud screening from Stripe-only orders to Affirm and PayPal and reported confirmed fraud, with customer IP, to a third-party fraud service.</li>
+<li>Launched e-commerce sites for two additional mattress brands on the same monolith, including brand-specific configuration and CI auto-deploy pipelines.</li>
+<li>Built career plans with direct reports and negotiated their promotions and raises; several were promoted to Senior and have since become Staff engineers and engineering managers.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><span class="entry-title"><strong>Software Engineer, then Senior Software Engineer</strong>, Tuft &amp; Needle</span><span class="entry-dates">Sep 2015 – Dec 2018</span></div>
+<p class="entry-summary">Built the checkout API, customer-experience tooling, and fulfillment automation in a Rails monolith; second-highest contributor in the codebase&#39;s history with 1,000+ commits.</p>
+<ul>
+<li>Upgraded the monolith from Rails 4.2 to 5.1 and Ruby 2.3 to 2.5, later continuing through Rails 6.0 as engineering manager.</li>
+<li>Designed the fallback that let orders complete during sales-tax provider outages.</li>
+<li>Found a SQL-injection exposure in the operations portal&#39;s search code after spotting an anomalous raw-SQL error, and closed it by sanitizing user input in the searcher classes.</li>
+<li>Designed key-based device authentication for retail point-of-sale terminals, with a private key provisioned over USB in place of passwords.</li>
+<li>Added caching and per-IP rate limiting to the public Grape API after a 2017 scraping incident degraded the site.</li>
+<li>Introduced automated performance testing and cut product-table queries on the cart endpoint from 22 per item to 1 per item.</li>
+</ul>
+</article>
+</section>
+<section>
+<h2>Projects</h2>
+<p class="project"><strong><a href="https://virissimo.info/ledger-lore/">LedgerLore</a></strong>: iPhone and iPad app that teaches the engineering side of fintech (double-entry ledgers, payment rails, reconciliation, idempotency, webhooks) through 686 spaced-repetition exercises scheduled by FSRS; awaiting App Store review.</p>
+<p class="project"><strong><a href="https://altkata.app/">Altkata</a></strong>: Native iOS and macOS app on the App Store with 1,728 spaced-repetition exercises on alternative investments, built on recito, my Swift and Ruby framework for exercise-driven learning apps.</p>
+<p class="project"><strong><a href="https://github.com/jaysonvirissimo/active_recall">ActiveRecall</a></strong>: Co-maintainer of a Ruby gem that adds spaced-repetition scheduling, from Leitner to FSRS, to ActiveRecord models; 42,000+ downloads.</p>
+</section>
+<section>
+<h2>Certifications</h2>
+<p class="certificate"><strong>Securities Industry Essentials (SIE)</strong>, FINRA, Jan 2025</p>
+<p class="certificate"><strong>Fundamentals of Alternative Investments</strong>, CAIA Association, Aug 2023</p>
+<p class="certificate"><strong><a href="https://coursera.org/verify/specialization/8WGL6WFC7F4E">Anti Money Laundering and Transaction Compliance Specialization</a></strong>, SkillUp via Coursera, Aug 2026</p>
+<p class="certificate"><strong>Graph Developer, Associate</strong>, Apollo GraphQL, Sep 2025</p>
+</section>
+<section>
+<h2>Education</h2>
+<div class="entry-head compact"><span><strong>Bachelor of Science, Political Science</strong>, Arizona State University</span><span class="entry-dates">2009</span></div>
+</section>
+</main>
+</body>
 </html>

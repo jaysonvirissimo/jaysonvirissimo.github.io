@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { JSDOM } = require('jsdom');
 const { assert } = require('chai');
+const { forbiddenPattern } = require('./forbidden-terms.cjs');
 
 const sourceMarkup = fs.readFileSync('./src/index.html');
 const mockDocument = new JSDOM(sourceMarkup).window.document;
@@ -46,11 +47,39 @@ describe('My professional website', () => {
       assert(h2.textContent.trim().toLowerCase() === 'résumé');
     });
 
-    it('should contain links to resumes', () => {
+    it('should contain links to resumes, PDF first', () => {
       const links = Array.from(resume.querySelectorAll('a'));
       assert(links.length === 3);
+      assert(links[0].getAttribute('href').endsWith('.pdf'));
     });
   });
+
+describe('work section', () => {
+  let work;
+
+  beforeEach(() => work = mockDocument.querySelector('#work'));
+
+  it('should exist with a title', () => {
+    assert.isOk(work);
+    assert(work.querySelector('h2').textContent.trim().toLowerCase() === 'work');
+  });
+
+  it('should describe at least three areas of work, each with tags', () => {
+    const cards = Array.from(work.querySelectorAll('.work-card'));
+    assert(cards.length >= 3);
+    cards.forEach(card => {
+      assert(card.querySelector('h3').textContent.trim() !== '');
+      assert(card.querySelector('p.description').textContent.trim() !== '');
+      assert(card.querySelectorAll('.tag').length);
+    });
+  });
+
+  it('should never name a partner firm', function () {
+    const pattern = forbiddenPattern();
+    if (!pattern) this.skip();
+    assert.notMatch(mockDocument.body.textContent, pattern);
+  });
+});
 
   describe('about section', () => {
     let about;
@@ -137,6 +166,33 @@ describe('My professional website', () => {
           assert(p);
           assert(p.textContent.trim() !== '');
         });
+      });
+    });
+
+    describe('featured apps', () => {
+      let featured;
+      let apps = [];
+
+      beforeEach(() => {
+        featured = portfolio.querySelector('.project.featured');
+        apps = featured ? Array.from(featured.querySelectorAll('.app')) : [];
+      });
+
+      it('should list at least two apps', () => {
+        assert(apps.length >= 2);
+      });
+
+      it('should give each app a name, a description, and a link', () => {
+        apps.forEach(app => {
+          assert(app.querySelector('h4').textContent.trim() !== '');
+          assert(app.querySelector('.app-description').textContent.trim() !== '');
+          assert(app.querySelector('a[href^="https://"]'));
+        });
+      });
+
+      it('should mention recito without linking to it', () => {
+        assert.include(featured.textContent, 'recito');
+        assert.isNull(featured.querySelector('a[href*="recito"]'));
       });
     });
   });

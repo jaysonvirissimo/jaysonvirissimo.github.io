@@ -1,0 +1,301 @@
+{
+  "basics": {
+    "name": "Jayson Virissimo",
+    "label": "Staff Software Engineer",
+    "email": "jayson.virissimo@asu.edu",
+    "website": "https://virissimo.info/",
+    "summary": "Staff software engineer with 11 years in Ruby on Rails, nearly four of them on a regulated alternative-investments platform, owning partner integrations end to end: architecture, compliance rules, data pipelines, incident response, and the partner relationship. Former engineering manager for checkout and payments. Builds the boring, correct parts of financial software: idempotent pipelines, advisory locks and database constraints, authenticated webhooks, and test-first pull requests (600+ merged since 2023).",
+    "location": {
+      "city": "Prescott Valley",
+      "countryCode": "US",
+      "region": "AZ",
+      "remote": true
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "jaysonvirissimo",
+        "url": "https://github.com/jaysonvirissimo"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jaysonvirissimo",
+        "url": "https://www.linkedin.com/in/jaysonvirissimo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "id": "subscribe",
+      "company": "SUBSCRIBE",
+      "position": "Staff Software Engineer",
+      "startDate": "2023-02-27",
+      "summary": "Engineer on a regulated platform for private-fund subscriptions, orders, and compliance (Ruby on Rails and React on AWS). Hired as Senior, promoted to Staff.",
+      "highlights": [
+        {
+          "id": "sub-bd-integration",
+          "text": "Sole engineer and technical owner of the flagship integration with one of the largest US independent broker-dealers, from requirements and API design through launch and support: automated account and team imports, hierarchical advisor teams, and real-time licensing and training checks."
+        },
+        {
+          "id": "sub-second-integration",
+          "text": "Owned a second partner integration end to end, from requirements through launch, on a configuration-driven import pipeline built so later partners onboard with minimal custom code."
+        },
+        {
+          "id": "sub-compliance",
+          "text": "Built pre-trade compliance checks that gate order entry on advisor registration and licensing, completed product training, and product concentration limits, covering tens of thousands of advisors across organizations."
+        },
+        {
+          "id": "sub-bd-hardening",
+          "text": "Hardened concurrency handling and data integrity across the integrations with advisory locks, unique background jobs, database unique constraints, idempotent migrations, and retries with backoff; fixed race conditions in account, team, and contact creation."
+        },
+        {
+          "id": "sub-security",
+          "text": "Strengthened tenant isolation and organization-scoped authorization across the integrations; delivered HMAC-authenticated webhooks with constant-time verification, support for multiple SAML identity providers, and OAuth token caching."
+        },
+        {
+          "id": "sub-lms",
+          "text": "Led research, design, and delivery of an advisor training platform (React and Rails) that gates investment-product access on completed training."
+        },
+        {
+          "id": "sub-incidents",
+          "text": "Owned incident response for the integration surface, from alert triage through mitigation, root-cause fixes, and coordination with partner engineers."
+        },
+        {
+          "id": "sub-partner-comms",
+          "text": "Primary technical contact for partner firms: ran requirements and design sessions with their engineers and managers, and proposed API shapes the broker-dealer adopted."
+        },
+        {
+          "id": "sub-importer-perf",
+          "text": "Ran zero-downtime data migrations that removed redundant association records and restructured team associations; profiled and optimized the nightly import jobs, cutting query counts by a third to two-thirds per job in profiling against production-shaped data."
+        },
+        {
+          "id": "sub-mentoring",
+          "text": "Onboarded and mentored the engineer who now owns the flagship integration, enabling a clean handoff; interviewed engineering candidates."
+        }
+      ]
+    },
+    {
+      "id": "handshake",
+      "company": "Handshake",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-05-09",
+      "endDate": "2023-02-01",
+      "summary": "Senior engineer on the messaging team of a student career platform (Rails, GraphQL, React).",
+      "highlights": [
+        {
+          "id": "hs-adrs",
+          "text": "Wrote architecture decision records with product managers and designers before building."
+        },
+        {
+          "id": "hs-graphql-mutations",
+          "text": "Replaced the student and employer inbox's REST endpoints with GraphQL mutations."
+        },
+        {
+          "id": "hs-messaging-service",
+          "text": "Moved expensive inbox operations out of the monolith into a messaging service."
+        },
+        {
+          "id": "hs-command-objects",
+          "text": "Introduced command objects in legacy controller actions to reduce feature rollout risk."
+        }
+      ]
+    },
+    {
+      "id": "tn-em",
+      "company": "Tuft & Needle",
+      "position": "Engineering Manager",
+      "startDate": "2019-01-01",
+      "endDate": "2022-04-29",
+      "summary": "Managed a team of up to five engineers and four contractors that owned checkout, payments (Stripe, Affirm, PayPal), promotions, customer-experience tooling, and the retail point-of-sale system for a direct-to-consumer mattress brand, while staying hands-on in the Rails monolith.",
+      "highlights": [
+        {
+          "id": "tn-idempotent-charge",
+          "text": "Prevented double charges by making payment capture transactional with order creation, holding a pessimistic lock until capture, and centralizing idempotency-key generation outside the Stripe gateway."
+        },
+        {
+          "id": "tn-fraud-rules",
+          "text": "Extended fraud screening from Stripe-only orders to Affirm and PayPal and reported confirmed fraud, with customer IP, to a third-party fraud service."
+        },
+        {
+          "id": "tn-brands",
+          "text": "Launched e-commerce sites for two additional mattress brands on the same monolith, including brand-specific configuration and CI auto-deploy pipelines."
+        },
+        {
+          "id": "tn-people",
+          "text": "Built career plans with direct reports and negotiated their promotions and raises; several were promoted to Senior and have since become Staff engineers and engineering managers."
+        }
+      ]
+    },
+    {
+      "id": "tn-swe",
+      "company": "Tuft & Needle",
+      "position": "Software Engineer, then Senior Software Engineer",
+      "startDate": "2015-09-08",
+      "endDate": "2018-12-31",
+      "summary": "Built the checkout API, customer-experience tooling, and fulfillment automation in a Rails monolith; second-highest contributor in the codebase's history with 1,000+ commits.",
+      "highlights": [
+        {
+          "id": "tn-rails-upgrade",
+          "text": "Upgraded the monolith from Rails 4.2 to 5.1 and Ruby 2.3 to 2.5, later continuing through Rails 6.0 as engineering manager."
+        },
+        {
+          "id": "tn-tax-fallback",
+          "text": "Designed the fallback that let orders complete during sales-tax provider outages."
+        },
+        {
+          "id": "tn-sqli",
+          "text": "Found a SQL-injection exposure in the operations portal's search code after spotting an anomalous raw-SQL error, and closed it by sanitizing user input in the searcher classes."
+        },
+        {
+          "id": "tn-passwordless",
+          "text": "Designed key-based device authentication for retail point-of-sale terminals, with a private key provisioned over USB in place of passwords."
+        },
+        {
+          "id": "tn-dos-protection",
+          "text": "Added caching and per-IP rate limiting to the public Grape API after a 2017 scraping incident degraded the site."
+        },
+        {
+          "id": "tn-perf-testing",
+          "text": "Introduced automated performance testing and cut product-table queries on the cart endpoint from 22 per item to 1 per item."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "ledgerlore",
+      "name": "LedgerLore",
+      "description": "iPhone and iPad app that teaches the engineering side of fintech (double-entry ledgers, payment rails, reconciliation, idempotency, webhooks) through 686 spaced-repetition exercises scheduled by FSRS; awaiting App Store review.",
+      "keywords": [
+        "Swift",
+        "FSRS",
+        "fintech"
+      ],
+      "url": "https://virissimo.info/ledger-lore/"
+    },
+    {
+      "id": "altkata",
+      "name": "Altkata",
+      "description": "Native iOS and macOS app on the App Store with 1,728 spaced-repetition exercises on alternative investments, built on recito, my Swift and Ruby framework for exercise-driven learning apps.",
+      "keywords": [
+        "Swift",
+        "FSRS",
+        "alternative investments"
+      ],
+      "url": "https://altkata.app/"
+    },
+    {
+      "id": "active-recall",
+      "name": "ActiveRecall",
+      "description": "Co-maintainer of a Ruby gem that adds spaced-repetition scheduling, from Leitner to FSRS, to ActiveRecord models; 42,000+ downloads.",
+      "keywords": [
+        "Ruby",
+        "Rails",
+        "FSRS"
+      ],
+      "url": "https://github.com/jaysonvirissimo/active_recall"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "finra-sie",
+      "name": "Securities Industry Essentials (SIE)",
+      "issuer": "FINRA",
+      "date": "2025-01-09"
+    },
+    {
+      "id": "caia-fundamentals",
+      "name": "Fundamentals of Alternative Investments",
+      "issuer": "CAIA Association",
+      "date": "2023-08-08"
+    },
+    {
+      "id": "aml-transaction-compliance",
+      "name": "Anti Money Laundering and Transaction Compliance Specialization",
+      "issuer": "SkillUp via Coursera",
+      "date": "2026-08-01",
+      "url": "https://coursera.org/verify/specialization/8WGL6WFC7F4E"
+    },
+    {
+      "id": "apollo-graph-developer",
+      "name": "Graph Developer, Associate",
+      "issuer": "Apollo GraphQL",
+      "date": "2025-09-07"
+    }
+  ],
+  "education": [
+    {
+      "id": "asu",
+      "institution": "Arizona State University",
+      "area": "Political Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2005-08-20",
+      "endDate": "2009-05-11",
+      "courses": []
+    }
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "Languages & frameworks",
+      "keywords": [
+        "Ruby",
+        "Ruby on Rails",
+        "SQL",
+        "GraphQL",
+        "TypeScript",
+        "React",
+        "JavaScript",
+        "Swift"
+      ]
+    },
+    {
+      "name": "Data & infrastructure",
+      "keywords": [
+        "PostgreSQL",
+        "Redis",
+        "Sidekiq",
+        "AWS",
+        "Kubernetes",
+        "Argo Workflows",
+        "Docker",
+        "Sentry"
+      ]
+    },
+    {
+      "name": "Security & auth",
+      "keywords": [
+        "SAML SSO",
+        "OAuth 2.0",
+        "JWT",
+        "HMAC webhook verification",
+        "multi-tenant authorization",
+        "rate limiting",
+        "secrets rotation"
+      ]
+    },
+    {
+      "name": "Fintech domain",
+      "keywords": [
+        "broker-dealer integrations",
+        "FINRA licensing rules",
+        "AML/KYC onboarding",
+        "pre-trade compliance checks",
+        "idempotent payment flows",
+        "Stripe",
+        "Affirm",
+        "PayPal"
+      ]
+    },
+    {
+      "name": "Practices",
+      "keywords": [
+        "test-first development (RSpec)",
+        "architecture decision records",
+        "incident response",
+        "AI-assisted engineering",
+        "mentoring"
+      ]
+    }
+  ]
+}

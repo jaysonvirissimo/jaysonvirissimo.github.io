@@ -4,19 +4,78 @@
   box-sizing: border-box;
 }
 
+/* Pixel font for the chrome (headings, buttons, tags); a readable mono for everything you actually read. */
 body {
   padding: 0 2rem;
   margin: 2rem;
-  font-family: 'Press Start 2P', cursive;
-  font-size: clamp(0.5rem, 2.8vw, 1rem);
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 1rem;
+  line-height: 1.7;
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+header p,
+.nes-btn,
+.tag {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+  font-size: clamp(1rem, 4vw, 1.75rem);
+  line-height: 1.4;
+}
+
+header p {
+  font-size: clamp(0.6rem, 2.4vw, 0.9rem);
+  line-height: 1.8;
+  margin: 0.25rem 0;
+}
+
+header .tagline {
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 1rem;
+  color: #444;
+}
+
+h2.title {
+  font-size: clamp(0.7rem, 2.4vw, 0.9rem);
+}
+
+h3.title {
+  font-size: clamp(0.6rem, 2.2vw, 0.8rem);
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: clamp(0.6rem, 2.2vw, 0.8rem);
+}
+
+.nes-btn {
+  font-size: 0.7rem;
+}
+
+/* Darker than NES.css's default blue so white text meets WCAG AA contrast. */
+.nes-btn.is-primary {
+  background-color: #1a6fb0;
+}
+
+.nes-btn.is-primary:hover {
+  background-color: #155e96;
 }
 
 .nes-container,
 .description {
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+section {
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -34,14 +93,39 @@ i.brand {
 }
 
 #bio p {
-  margin: 0;
-  line-height: 1.8;
+  margin: 0 0 1rem;
+}
+
+#bio p:last-child {
+  margin-bottom: 0;
 }
 
 .bio-photo {
   width: 140px;
   height: auto;
   flex-shrink: 0;
+}
+
+.resume-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1.5rem;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.work-card .description {
+  flex: 1;
 }
 
 .tags {
@@ -51,7 +135,7 @@ i.brand {
 }
 
 .tag {
-  font-size: 0.7rem;
+  font-size: 0.55rem;
   padding: 0.25rem 0.5rem;
   border: 2px solid #fff;
 }
@@ -60,6 +144,47 @@ i.brand {
   outline: 4px solid #f7d51d;
   outline-offset: 4px;
   margin-bottom: 2rem;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.app-name {
+  margin: 0 0 0.75rem;
+}
+
+.app-subtitle {
+  color: #f7d51d;
+  font-size: 0.9em;
+}
+
+.app-stats,
+.app-engine {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: auto 0 0;
+}
+
+.app-engine {
+  border-top: 2px dashed #555;
+  padding-top: 1rem;
+  margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
@@ -89,5 +214,9 @@ i.brand {
   .project .nes-btn {
     display: inline-block;
     margin-bottom: 0.5rem;
+  }
+
+  .app-links .nes-btn {
+    margin-bottom: 0;
   }
 }

@@ -14,6 +14,7 @@ Install dependencies with `npm install`.
 Use `npm start` to run the site locally. 
 `npm test` runs the test suite.
 
-`npm run build-resumes` rebuilds the HTML and PDF resumes based on changes to the JSON version.
+`resume/master.json` is the source of truth for the résumé; `resume/schema.md` documents its format.
+`npm run build:resume` rebuilds the JSON, HTML, and PDF resumes in `src/documents/` from it with the in-repo theme in `themes/plain/`, and fails if the PDF runs past two pages.
 
-`npm run deploy` runs the tests suite and conditionally commits all the static assets to `master` branch and deploys to production.
+Pushing to `development` runs the test suite and, if it passes, deploys `src/` to production via GitHub Actions (`.github/workflows/pages.yml`).
