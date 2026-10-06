@@ -1,0 +1,319 @@
+{
+  "basics": {
+    "name": "Jayson Virissimo",
+    "label": "Senior Software Engineer",
+    "email": "jayson.virissimo@asu.edu",
+    "website": "http://virissimo.info/",
+    "location": {
+      "city": "Prescott Valley",
+      "countryCode": "US",
+      "region": "Arizona"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "jaysonvirissimo",
+        "url": "https://github.com/jaysonvirissimo"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jaysonvirissimo",
+        "url": "https://www.linkedin.com/in/jaysonvirissimo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "id": "subscribe",
+      "company": "SUBSCRIBE",
+      "position": "Staff Software Engineer",
+      "startDate": "2023-02-27",
+      "summary": "Owned end-to-end delivery of broker-dealer integrations and maintained critical infrastructure as member of Core Team",
+      "highlights": [
+        {
+          "id": "sub-bd-integration",
+          "tags": ["integrations", "architecture", "fintech", "leadership", "scale"],
+          "text": "Architected and led the technical implementation of a mission-critical integration with one of the nation's largest independent broker-dealers, enabling alternative investment access through automatic account imports, hierarchical team management, and real-time licensing/training verification — the system has processed hundreds of thousands of accounts and serves over a thousand active users"
+        },
+        {
+          "id": "sub-bd-hardening",
+          "tags": ["integrations", "reliability", "refactoring", "data-integrity"],
+          "text": "Matured that first broker-dealer integration into stable infrastructure by strengthening data validation, resolving race conditions in account and team creation, retiring 30+ feature toggles, and refactoring modules for long-term maintainability"
+        },
+        {
+          "id": "sub-second-integration",
+          "tags": ["integrations", "architecture", "ownership", "fintech", "platform"],
+          "text": "Owned a second integration end-to-end with a major full-service wealth management firm, from requirements discovery through implementation, designing a configuration-driven import pipeline intentionally generalized so future integrations can onboard with minimal custom code"
+        },
+        {
+          "id": "sub-partner-comms",
+          "tags": ["communication", "stakeholders", "leadership", "fintech", "compliance"],
+          "text": "Represented the company in technical discussions with engineers and managers at both partner broker-dealers, translating complex architectural and regulatory constraints into actionable decisions for both technical and non-technical stakeholders"
+        },
+        {
+          "id": "sub-mentoring",
+          "tags": ["mentoring", "leadership", "ownership"],
+          "text": "Onboarded and mentored an engineer to independently own the first broker-dealer integration's development and support, enabling a clean handoff and sustained operational continuity"
+        },
+        {
+          "id": "sub-lms",
+          "tags": ["product", "greenfield", "auth", "security", "integrations", "learning"],
+          "text": "Spearheaded the research, design, and development of a Learning Management System, enabling financial advisors to undergo multimedia trainings for investment product access. Integrated real-time data synchronization with external platforms, fortified authentication and authorization mechanisms, and incorporated export features for enhanced usability"
+        },
+        {
+          "id": "sub-importer-perf",
+          "tags": ["performance", "database", "data-migration", "scale"],
+          "text": "Resolved user importer performance issues for our largest integration partner by refactoring our team structure and implementing a series of data migrations that safely destroyed tens of millions of unnecessary records"
+        },
+        {
+          "id": "sub-incidents",
+          "tags": ["reliability", "incident-response", "database", "sso", "operations"],
+          "text": "Resolved production incidents beyond core responsibilities, including terminating database-locking queries blocking deployments, fixing unsafe migrations, and investigating SSO-related errors across integrations"
+        },
+        {
+          "id": "sub-ci-runtime",
+          "tags": ["ci-cd", "developer-experience", "performance", "infrastructure"],
+          "text": "Decreased CI runtime by ~5 minutes by profiling Argo workflow steps and resizing test suite chunks to maximize the benefit of parallelism"
+        },
+        {
+          "id": "sub-interviewing",
+          "tags": ["hiring", "leadership"],
+          "text": "Interviewed software engineer candidates"
+        }
+      ]
+    },
+    {
+      "id": "handshake",
+      "company": "Handshake",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-05-09",
+      "endDate": "2023-02-01",
+      "summary": "Maintained and added features to student and employer inboxes (and associated services)",
+      "highlights": [
+        {
+          "id": "hs-adrs",
+          "tags": ["architecture", "documentation", "collaboration"],
+          "text": "Worked with PM and designers to create architectural decision records"
+        },
+        {
+          "id": "hs-messaging-service",
+          "tags": ["architecture", "services", "performance", "messaging"],
+          "text": "Migrated expensive operations from monolith to messaging miniservice"
+        },
+        {
+          "id": "hs-graphql-types",
+          "tags": ["graphql", "api-design", "domain-modeling"],
+          "text": "Modelled career fair business rules as GraphQL types"
+        },
+        {
+          "id": "hs-graphql-mutations",
+          "tags": ["graphql", "api-design", "rest", "migration"],
+          "text": "Replaced inbox RESTful endpoints with analogous GraphQL mutations"
+        },
+        {
+          "id": "hs-command-objects",
+          "tags": ["refactoring", "legacy-code", "risk-reduction", "design-patterns"],
+          "text": "Introduced command objects to legacy controller actions to reduce feature rollout risk"
+        },
+        {
+          "id": "hs-hackathon",
+          "tags": ["product", "innovation"],
+          "text": "Participated in hackathon project that inspired real production features"
+        },
+        {
+          "id": "hs-mentoring",
+          "tags": ["mentoring", "leadership"],
+          "text": "Mentored interns and junior developers"
+        },
+        {
+          "id": "hs-code-review",
+          "tags": ["code-quality", "engineering-culture", "leadership"],
+          "text": "Worked with EM to improve code review practices and code quality metrics"
+        }
+      ]
+    },
+    {
+      "id": "tn-em",
+      "company": "Tuft & Needle",
+      "position": "Engineering Manager",
+      "startDate": "2019-01-01",
+      "endDate": "2022-04-29",
+      "summary": "Lead teams responsible for customer experience tooling, checkout, payments, promotions, and the retail POS system",
+      "highlights": [
+        {
+          "id": "tn-ceremonies",
+          "tags": ["management", "agile", "architecture", "documentation"],
+          "text": "Lead standups, grooming, planning, retrospectives, and created architecture documents"
+        },
+        {
+          "id": "tn-career-plans",
+          "tags": ["management", "people", "mentoring"],
+          "text": "Helped my direct reports develop career progression plans and learning goals"
+        },
+        {
+          "id": "tn-checkout-perf",
+          "tags": ["performance", "security", "checkout", "ecommerce"],
+          "text": "Improved checkout performance and fixed security vulnerabilities"
+        },
+        {
+          "id": "tn-idempotent-charge",
+          "tags": ["payments", "reliability", "idempotency", "ecommerce"],
+          "text": "Implemented idempotent charge step to avoid double charges improving customer ratings"
+        },
+        {
+          "id": "tn-address-cache",
+          "tags": ["caching", "performance", "checkout", "integrations"],
+          "text": "Designed and implemented shipping address validation result caching"
+        },
+        {
+          "id": "tn-cart-scrub",
+          "tags": ["checkout", "inventory", "ecommerce"],
+          "text": "Updated register to scrub out-of-stock items from customer carts"
+        },
+        {
+          "id": "tn-okrs",
+          "tags": ["management", "strategy", "planning"],
+          "text": "Determined team's objectives and key results"
+        },
+        {
+          "id": "tn-prioritization",
+          "tags": ["management", "stakeholders", "planning"],
+          "text": "Helped stakeholders prioritize feature development and system maintenance"
+        },
+        {
+          "id": "tn-promotions",
+          "tags": ["management", "people", "advocacy"],
+          "text": "Negociated with business for promotions and raises for direct reports"
+        },
+        {
+          "id": "tn-fedex",
+          "tags": ["automation", "integrations", "logistics"],
+          "text": "Automated FedEx shipment handling requests"
+        },
+        {
+          "id": "tn-deactivation",
+          "tags": ["security", "privacy", "data"],
+          "text": "Implemented secure deactivation of user records"
+        },
+        {
+          "id": "tn-textline",
+          "tags": ["integrations", "messaging", "compliance", "consent"],
+          "text": "Integrated with Textline API and implemented double opt-in flow"
+        },
+        {
+          "id": "tn-fraud-rules",
+          "tags": ["payments", "fraud", "security", "integrations"],
+          "text": "Add custom fraud check rules for Affirm and PayPal payment methods"
+        }
+      ]
+    },
+    {
+      "id": "tn-swe",
+      "company": "Tuft & Needle",
+      "position": "Software Engineer",
+      "startDate": "2015-09-08",
+      "endDate": "2018-12-31",
+      "summary": "Built tools for customer experience users and automated product fulfillment flows",
+      "highlights": [
+        {
+          "id": "tn-rails-upgrade",
+          "tags": ["rails", "upgrades", "legacy-code", "maintenance"],
+          "text": "Upgraded large monolith Rails application from 4.2 -> 5.2 and Ruby from 2.4 -> 2.6"
+        },
+        {
+          "id": "tn-tax-fallback",
+          "tags": ["reliability", "resilience", "integrations", "architecture"],
+          "text": "Designed and implemented sales tax service outage fallback system"
+        },
+        {
+          "id": "tn-sqli",
+          "tags": ["security", "sql"],
+          "text": "Discovered and hardened against SQL-injection vulnerabilities in operations portal"
+        },
+        {
+          "id": "tn-passwordless",
+          "tags": ["auth", "security", "pos"],
+          "text": "Designed and implemented passwordless POS system authentication"
+        },
+        {
+          "id": "tn-dos-protection",
+          "tags": ["security", "api", "rate-limiting"],
+          "text": "Add DOS attack protection to high throughput grape endpoints"
+        },
+        {
+          "id": "tn-perf-testing",
+          "tags": ["performance", "testing", "database"],
+          "text": "Introduced automated performance testing and reduced product queries 22-fold"
+        }
+      ]
+    },
+    {
+      "id": "jetpack",
+      "company": "JetPack Enterprises",
+      "position": "Web Developer",
+      "startDate": "2015-02-01",
+      "endDate": "2015-08-21",
+      "summary": "Repaired, refactored, and added features to legacy software projects",
+      "highlights": []
+    },
+    {
+      "id": "bloom",
+      "company": "Bloom & Speak Bilingual Tx",
+      "position": "Co-founder",
+      "startDate": "2012-01-01",
+      "endDate": "2017-09-01",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "id": "asu",
+      "tags": ["degree"],
+      "institution": "Arizona State University",
+      "area": "Political Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2005-08-20",
+      "endDate": "2009-05-11",
+      "courses": []
+    },
+    {
+      "id": "caia-fundamentals",
+      "tags": ["fintech", "alternative-investments"],
+      "institution": "Chartered Alternative Investment Analyst Association",
+      "area": "Fundamentals of Alternative Investments",
+      "studyType": "Certificate",
+      "endDate": "2023-08-08"
+    },
+    {
+      "id": "finra-sie",
+      "tags": ["fintech", "securities", "compliance"],
+      "institution": "FINRA",
+      "area": "Securities Industry Essentials",
+      "studyType": "Exam",
+      "endDate": "2025-01-09"
+    },
+    {
+      "id": "apollo-graph-developer",
+      "tags": ["graphql", "api-design"],
+      "institution": "Apollo GraphQL",
+      "area": "Graph Developer",
+      "studyType": "Associate Certification",
+      "endDate": "2025-09-07"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "A2 (Certificado inicial de português língua estrangeira)"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": ["Ruby", "Rails", "SQL", "HTML", "JavaScript", "GraphQL", "React", "TypeScript", "CSS", "REST"]
+    }
+  ]
+}

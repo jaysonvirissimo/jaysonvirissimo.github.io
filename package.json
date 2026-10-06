@@ -4,24 +4,25 @@
   "description": "The personal and professional home page of Jayson Virissimo",
   "private": true,
   "scripts": {
-    "build-html-resume": "echo 'Exporting to HTML...' && cd src/documents && resume export resume.html --format html --theme spartan",
-    "build-pdf-resume": "echo 'Exporting to PDF...' && cd src/documents; resume export resume.pdf --theme ../../node_modules/jsonresume-theme-short",
-    "build-resumes": "npm run validate && npm run build-html-resume && npm run build-pdf-resume",
+    "build:resume": "node scripts/build.mjs",
+    "tailor": "node scripts/build.mjs",
+    "tailor:new": "node scripts/build.mjs --new",
     "deploy": "npm run test && git subtree push --prefix src origin master",
     "start": "browser-sync start --server ./src --files ./src",
-    "test": "mocha test/*.spec.js",
-    "validate": "echo 'Validating resume.json...' && cd src/documents && resume validate && echo 'Validated!'"
+    "test": "mocha test/*.spec.js test/*.spec.mjs"
   },
   "author": "Jayson Virissimo <jayson.virissimo@asu.edu>",
   "devDependencies": {
+    "@jsonresume/schema": "^1.3.1",
     "browser-sync": "^2.29.0",
     "chai": "^4.5.0",
     "jsdom": "^25.0.0",
     "mocha": "^10.8.0",
-    "resume-cli": "^3.1.2"
+    "puppeteer": "^25.12.0",
+    "yaml": "^2.9.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22.12"
   },
   "dependencies": {
     "jsonresume-theme-short": "^0.1.7",
