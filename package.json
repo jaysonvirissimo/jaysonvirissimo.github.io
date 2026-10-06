@@ -7,7 +7,6 @@
     "build:resume": "node scripts/build.mjs",
     "tailor": "node scripts/build.mjs",
     "tailor:new": "node scripts/build.mjs --new",
-    "deploy": "npm run test && git subtree push --prefix src origin master",
     "start": "browser-sync start --server ./src --files ./src",
     "test": "mocha test/*.spec.js test/*.spec.mjs"
   },

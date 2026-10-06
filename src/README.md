@@ -20,4 +20,4 @@ Use `npm start` to run the site locally.
 To tailor a résumé for a job, run `/tailor <job URL or pasted description>` in Claude Code, or run `npm run tailor:new acme`, edit `tailored/acme/variant.yaml`, and run `npm run tailor acme`.
 Tailored output goes to `out/acme/`; `tailored/` and `out/` are gitignored.
 
-`npm run deploy` runs the tests suite and conditionally commits all the static assets to `master` branch and deploys to production.
+Pushing to `development` runs the test suite and, if it passes, deploys `src/` to production via GitHub Actions (`.github/workflows/pages.yml`).
