@@ -54,8 +54,8 @@
       <img src="images/me.png" alt="Jayson Virissimo" class="bio-photo">
       <p>
         Jayson Virissimo is a Staff Software Engineer at SUBSCRIBE, where he's helping build the operating system for the alternative investments industry. 
-        He works primarily in Ruby on Rails, with TypeScript, React, and GraphQL across the stack. 
-        Outside of work he builds learning tools grounded in spaced repetition — most recently Altkata, a native iOS and macOS app. 
+        He works primarily in Ruby on Rails, with Postgres, React, and GraphQL across the stack. 
+        Outside of work he builds learning tools grounded in spaced repetition — most recently Altkata and LedgerLore, native apps for iPhone, iPad, and Mac. 
         He lives in Arizona.
       </p>
     </div>
@@ -73,18 +73,41 @@
   <section id="portfolio" class="nes-container with-title">
     <h2 class="title">Portfolio</h2>
       <div class="project featured nes-container is-dark with-title">
-        <h3 class="title">Altkata</h3>
-        <!-- App Store screenshot: drop into src/images/ and add an <img> here -->
-        <p class="description">A native iOS and macOS app for learning alternative investments through spaced repetition (FSRS): 1,478 exercises across 50 topics, with instant answer verification, hands-free audio review, and a local-first, privacy-respecting design.</p>
-        <p class="tags">
-          <span class="tag">iOS</span>
-          <span class="tag">macOS</span>
-          <span class="tag">Spaced Repetition</span>
-        </p>
-        <p>
-          <a class="nes-btn is-primary" href="https://altkata.app/" role="button">Website</a>
-          <a class="nes-btn is-success" href="https://apps.apple.com/us/app/altkata/id6767114611" role="button">App Store</a>
-        </p>
+        <h3 class="title">Spaced-Repetition Apps</h3>
+        <p class="description">Native Apple apps that teach a professional field through short exercises scheduled by FSRS. Sessions end each day, a full hands-free voice mode works while walking or driving, and everything is local-first with optional iCloud sync — no accounts, no tracking.</p>
+        <div class="app-grid">
+          <article class="app nes-container is-dark">
+            <h4 class="app-name">LedgerLore</h4>
+            <p class="app-subtitle">Learn financial technology</p>
+            <p class="app-description">The engineering side of fintech: double-entry ledgers, payment rails (ACH, cards, instant, wire), reconciliation, idempotency, and webhooks — ordered so no term appears before the card that defines it.</p>
+            <p class="app-stats">686 exercises · 53 topics</p>
+            <p class="tags">
+              <span class="tag">iPhone</span>
+              <span class="tag">iPad</span>
+            </p>
+            <p class="app-links">
+              <a class="nes-btn is-primary" href="https://virissimo.info/ledger-lore/" role="button">Website</a>
+              <!-- Replace with an App Store link once approved -->
+              <span class="nes-btn is-disabled" aria-disabled="true">In App Review</span>
+            </p>
+          </article>
+          <article class="app nes-container is-dark">
+            <!-- App Store screenshot: drop into src/images/ and add an <img> here -->
+            <h4 class="app-name">Altkata</h4>
+            <p class="app-subtitle">Learn alternative investments</p>
+            <p class="app-description">The foundations of alternative investments: private equity, hedge funds, real estate, infrastructure, commodities, structured products, and digital assets, plus the regulatory and tax frameworks around them.</p>
+            <p class="app-stats">1,728 exercises · 54 topics</p>
+            <p class="tags">
+              <span class="tag">iOS</span>
+              <span class="tag">macOS</span>
+            </p>
+            <p class="app-links">
+              <a class="nes-btn is-primary" href="https://altkata.app/" role="button">Website</a>
+              <a class="nes-btn is-success" href="https://apps.apple.com/us/app/altkata/id6767114611" role="button">App Store</a>
+            </p>
+          </article>
+        </div>
+        <p class="app-engine">I extracted Altkata’s engine into <strong>recito</strong>, a Swift and Ruby framework for building apps like these, and LedgerLore is built on it. (Not yet open source.)</p>
       </div>
       <div id="projects">
         <div class="project nes-container is-dark with-title">

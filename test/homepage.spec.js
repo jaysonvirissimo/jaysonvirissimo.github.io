@@ -139,6 +139,33 @@ describe('My professional website', () => {
         });
       });
     });
+
+    describe('featured apps', () => {
+      let featured;
+      let apps = [];
+
+      beforeEach(() => {
+        featured = portfolio.querySelector('.project.featured');
+        apps = featured ? Array.from(featured.querySelectorAll('.app')) : [];
+      });
+
+      it('should list at least two apps', () => {
+        assert(apps.length >= 2);
+      });
+
+      it('should give each app a name, a description, and a link', () => {
+        apps.forEach(app => {
+          assert(app.querySelector('h4').textContent.trim() !== '');
+          assert(app.querySelector('.app-description').textContent.trim() !== '');
+          assert(app.querySelector('a[href^="https://"]'));
+        });
+      });
+
+      it('should mention recito without linking to it', () => {
+        assert.include(featured.textContent, 'recito');
+        assert.isNull(featured.querySelector('a[href*="recito"]'));
+      });
+    });
   });
 
   describe('footer', () => {
